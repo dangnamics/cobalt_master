@@ -1,0 +1,164 @@
+﻿@media (max-width: $screen-xs-max) {
+    section {
+        &.grid {
+                      section {
+                        &.grid {
+
+                        .img-responsive {
+                            display: block;
+                            border:none;
+                            max-height: 268px;
+                            height:100%;
+                              max-width: 440px;
+                        }
+                    }
+                   }
+           
+            .container {
+                padding: 0;
+
+                .row {
+                    border-top: 0px solid $brand-primary-accent;
+                    margin: 0;
+                    padding:0;
+                    &.first {
+                        padding-top:14px;
+                        .grid-item:first-of-type {
+                            border-top: none;
+                            padding-top: 0;
+                        }
+                    }
+
+                    .grid-item {
+                        padding-left: 0px;
+                        padding-right: 0px;
+                        border-top: 2px solid $brand-primary-accent;
+                        padding-top: 18px;
+                        margin-bottom:49px;
+                        .inner {
+                            h2 {
+                                font-size: 28px;
+                                line-height: 50px;
+                                //text-align: left;
+                                padding: 0 25px;
+                                max-width: 470px;
+                                margin-left:auto;
+                                margin-right:auto;
+                            }
+
+                            p {
+                                padding: 0 5px;
+                                width: 88%;
+                                margin: 0 auto;
+                                font-size: 18px;
+                                text-align:left;
+                            }
+                            a{
+                                margin-bottom:11px;
+                                &.cta{
+                                    margin-top:23px;
+                                    margin-bottom:0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+.page-template-list-grid{
+  section{
+    
+    &.hero{
+      .container{
+        .hero-container{
+          .content-right{
+                //padding-top: 445px !important;
+            h1{
+              &.hdr{
+                font-size:42px ;
+                margin-top:30px ;
+                margin-bottom:6px ; 
+              }
+            }
+            p{
+              font-size:17px ;
+              line-height:27px ;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+	
+}
+
+/* Landscape phone to portrait tablet */
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+.page-template-list-grid{
+  section{
+    
+    &.hero{
+      .container{
+        .hero-container{
+          .content-right{
+            //padding-top:730px !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+}
+
+   section {
+        &.grid {
+        .grid-image-thumbnail{
+            height:auto; // ?
+            .img-responsive {
+                display: inline;
+                border:none;
+                margin-right: auto;
+                margin-left: auto;
+                max-width: 440px;
+                width:100%
+            }
+        }
+    }
+   }
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+   section {
+        &.grid {
+     
+        .img-responsive {
+            display: inline;
+            border:none;
+            max-height: 275px;
+            height:100%;
+        }
+    }
+   }
+
+
+}
+
+/* Large desktop */
+@media (min-width: $screen-lg-min) {
+
+   section {
+        &.grid {
+     
+        .img-responsive {
+            display: inline;
+            border:none;
+           
+            height:100%;
+        }
+    }
+   }
+
+}

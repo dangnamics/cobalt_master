@@ -1,0 +1,125 @@
+/* Landscape phones and down */
+@media (max-width: @screen-xs-max) {
+
+	.footer {
+		&.footer-1 {
+			.container, .container-fluid {
+				.nav {
+					 &.nav-1 {
+						#menu-footer-navigation {
+							display:none;
+						}
+					}
+				}
+				.footer-icon-row {
+					ul {
+						padding:0;
+						margin:0;
+						text-align:center;
+						li {
+							padding:0;
+							margin:0;
+							margin:0 (@grid-gutter-width / 2) (@grid-gutter-width / 2);
+							display:inline-block;
+						}
+					}
+				}
+				.sub1 {
+					.col {
+						margin-bottom:3em;
+						.hdr {
+							text-align:center;
+						}
+						.btn-donate {
+							display:block;
+							width:60%;
+							margin:0 auto;
+						}
+					}
+				}
+			}	
+		}
+	}
+}
+
+/* Landscape phone to portrait tablet */
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+
+	.footer {
+		&.footer-1 {
+			.container, .container-fluid {
+				.nav {
+					 &.nav-1 {
+						#menu-footer-navigation {
+							display:none;
+						}
+					}
+				}
+				.footer-icon-row {
+					ul {
+						padding:0;
+						margin:0;
+						li {
+							padding:0;
+							margin:0;
+							float:left;
+							margin-left:(@grid-gutter-width / 2);
+						}
+					}
+				}
+				.sub1 {
+					.col {
+						margin-bottom:3em;
+					}
+				}
+			}	
+		}
+	}
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+
+	.footer {
+		&.footer-1 {
+			.container, .container-fluid {
+				.footer-icon-row {
+					ul {
+						padding:0;
+						margin:0;
+						li {
+							padding:0;
+							margin:0;
+							float:left;
+							margin-left:(@grid-gutter-width / 2);
+						}
+					}
+				}
+			}	
+		}
+	}
+}
+
+/* Large desktop */
+@media (min-width: @screen-lg-min) {
+
+
+	.footer {
+		&.footer-1 {
+			.container, .container-fluid {
+				.footer-icon-row {
+					ul {
+						padding:0;
+						margin:0;
+						li {
+							padding:0;
+							margin:0;
+							float:left;
+							margin-left:(@grid-gutter-width / 2);
+						}
+					}
+				}
+			}	
+		}
+	}
+}

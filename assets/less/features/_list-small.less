@@ -1,0 +1,62 @@
+/** LIST-SMALL.LESS **/
+/* Author: Nick Downs */
+
+
+//Variables
+//Any values that are reused and/or customizable should be defined as variables. If they need to be accessible by other files, use [variables.less]
+
+
+
+/********************
+* General
+********************/
+
+.list-small {
+	
+	.list-row {
+		padding-left: 0;
+		padding-right: 0;
+		margin: 3rem 0;
+	}
+	
+	.list-item {
+		
+		@media (max-width: @screen-xs-max) {
+			font-size: 0; // inline-block fix
+		}
+		
+		.image-container {
+			float: left;
+			width: auto;
+			max-width: 33%;
+			padding: 0 (@grid-gutter-width / 2);
+			
+			@media (max-width: @screen-xs-max) {
+				padding-right: 0; // eliminate double padding
+				float: none;
+				vertical-align: middle;
+				display: inline-block;
+			}
+		}
+		
+		.title {
+			margin-top: 0;
+			
+			@media (max-width: @screen-xs-max) {
+				float: none;
+				vertical-align: middle;
+				display: inline-block;
+			}
+		}
+		
+		.description {
+			
+			@media (max-width: @screen-xs-max) {
+				margin-top: 1rem;
+			}
+		}
+	}
+	
+}
+
+/*******************/

@@ -1,0 +1,118 @@
+﻿$newsfeed-image-size-width: 360px;
+$newsfeed-image-area-width: 35%;
+.page.page-template-list , .search{
+    @media (max-width: $screen-xs-max) {
+        section {
+            &.newsfeed.newsfeed-1 {
+                  
+                .container {
+                    padding-left: 0px;
+                    padding-right: 0px;
+                    margin-left:auto;
+                    margin-right:auto;
+                    max-width:$newsfeed-image-size-width;
+                    .newsfeed {
+                        padding-left: 0;
+                        padding-right: 0;
+
+                        .newsfeed-item {
+                            padding:0;
+                            .container-fluid {
+                                .row {
+                                    .news-items-left {
+                                        max-height: 300px;
+
+                                        img {
+                                            width: auto;
+                                        }
+                                    }
+
+                                    .newsfeed-information {
+                                        width: auto;
+                                        max-width: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+        section {
+            &.newsfeed.newsfeed-1 {
+                .container {
+                    padding-left: 30px;
+                    padding-right: 30px;
+
+                    .newsfeed {
+                        padding-left: 0;
+                        padding-right: 0;
+
+                        .newsfeed-item {
+                            .container-fluid {
+                                .row {
+                                    .news-items-left {
+                                        //width: 24%;
+                                        //max-width: none;
+
+                                        img {
+                                            //width: 100%;
+                                        }
+                                    }
+
+                                    .newsfeed-information {
+                                        max-width: none;
+                                        margin-top: 0px;
+                                        padding-left:45px;
+                                        width:55%;
+                                        margin-left:45%;
+                                        .inner {
+                                            .news-items-heading {
+                                                h4 {
+                                                    &.hdr {
+                                                        margin-top: 0px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /* Portrait tablet to landscape and desktop */
+    @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+    }
+    /* Large desktop */
+    @media (min-width: $screen-lg-min) {
+    }
+
+    // At 1,024 pixels (just when the left item's 35% becomes too large for the 360px image)
+    // we want to fix the right content's margin so the gutter doesn't become any bigger.
+    @media (min-width: $newsfeed-image-size-width / ($newsfeed-image-area-width/100%)){
+        section {
+            &.newsfeed {
+                .container {
+                    .newsfeed {
+                        .newsfeed-item {
+                            .container-fluid {
+                                .row {
+                                    .newsfeed-information {
+                                        margin-left:$newsfeed-image-size-width;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

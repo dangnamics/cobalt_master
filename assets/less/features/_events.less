@@ -1,0 +1,52 @@
+/** EVENTS.LESS **/
+/* Author: Nick Downs */
+
+
+//Variables
+//Any values that are reused and/or customizable should be defined as variables. If they need to be accessible by other files, use [variables.less]
+
+
+
+/********************
+* General
+********************/
+
+.events {
+	
+	.event-item {
+		border: 1px solid @gray-light;
+		font-size: 0; //eliminate space between inline block elements
+		overflow: hidden; //hide image's box-shadow
+
+		+ .event-item {
+			margin-top: 1rem; //space between events
+		}
+		
+	}
+	
+	img {
+		padding: 0;
+		box-shadow: -100px 0 0 100px @gray; //background above and below image
+		display: inline-block;
+		float: none;
+	}
+		
+	.event-information {
+		padding: 0.8rem (@grid-gutter-width / 2); //variables.less
+		float: none;
+		display: inline-block;
+		vertical-align: middle;
+		
+		h4 {
+			margin: 0;
+		}
+	
+		.description {
+			font-size: 1rem;
+			line-height: 1.4;
+		}
+	}
+	
+}
+
+/*******************/

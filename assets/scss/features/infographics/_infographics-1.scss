@@ -1,0 +1,47 @@
+﻿section{
+    &.infographic{
+        margin-top:80px;
+        .container{
+            text-align:center;
+            h2{
+                font-size:$h2;
+                text-align:center;
+            }
+            span{
+                &.sub-title{
+                    font-size:20px;
+                    text-align:center;
+                    margin-bottom:20px;
+                }
+            }
+            .row{
+                margin-top:20px;
+                .infographic-item {
+                    .infographic-title{
+                              float:left;
+                    }
+                    img{
+                        float:left;
+                        max-width:240px;
+                        border-radius:50%;
+                        border:solid 5px $brand-primary;
+                    }
+
+                }
+            }
+        }
+
+    }
+}
+
+.home{
+    section{
+        &.infographic-2{
+            padding-bottom:81px;
+            border-bottom:5px solid #CCCCCC;
+        }
+    }
+}
+
+
+@import "_infographics-1-responsive.scss";

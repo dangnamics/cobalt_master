@@ -1,0 +1,9 @@
+﻿
+//Place to include default fonts
+//Place to include default fonts
+@include fontFace('Gotham-Book_gdi','../scss/fonts/gotham/Gotham-Book_gdi');
+@include fontFace('Gotham-Bold_gdi','../scss/fonts/gotham/Gotham-Bold_gdi',"normal", "bold");
+@include fontFace('Gotham-Medium_gdi','../scss/fonts/gotham/Gotham-Medium_gdi',"normal", "600");
+
+
+//fontFace($family,$src,$style: normal,$weight: normal)

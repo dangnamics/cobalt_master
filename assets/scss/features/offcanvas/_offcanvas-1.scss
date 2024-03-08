@@ -1,0 +1,170 @@
+﻿/********************
+* Author: Nick Downs
+* Modified: Tony Dang
+* Notes: Changed to Scss
+********************/
+
+
+
+//Variables
+//Any values that are reused and/or customizable should be defined as variables. If they need to be accessible by other files, use [variables.less]
+$navbar-toggle-width: 22px;
+$navbar-toggle-padding: 10px + $navbar-padding-horizontal;
+$window-absolute-min:320px;
+$navbar-toggle-area: ($navbar-toggle-width + $navbar-toggle-padding);
+$offcanvas-size-xs: $window-absolute-min - ($navbar-toggle-area) ;
+$offcanvas-size-sm: $screen-sm-max - $navbar-toggle-area;
+$offcanvas-transition: all 0.25s ease-out;
+$offcanvas-side: right;
+$offcanvas-cover-color: white;
+
+
+/********************
+* General
+********************/
+
+//Since this is a mobile nav, we'll restrict everything to tablets and below
+//@media (max-width: $screen-lg-max) {
+	.offcanvas-open{
+        .header{
+            
+
+        }
+        .navbar-toggle {
+            margin-right:3px;
+            .icon-bar{
+                position:relative;
+                @include ease-in(.5s, .25s);
+                background-color:$brand-primary;
+            }
+            .icon-bar-top {
+                @include ease-in(.5s, .325s);
+                transform:translateY(10px) rotate(45deg);
+                -ms-transform:translateY(10px) rotate(45deg);
+                -webkit-transform:translateY(10px) rotate(45deg);
+                -moz-transform:translateY(10px) rotate(45deg);
+                /*.translateY(8px);
+                .rotate(45deg);*/
+                //top:8px;
+            }
+            .icon-bar-middle {
+                @include ease-in(0s, .25s);
+                opacity:0;
+            }
+            .icon-bar-bottom {
+                @include ease-in(.65s, .175s);
+                transform:translateY(-6px) rotate(-45deg);
+                -ms-transform:translateY(-6px) rotate(-45deg);
+                -webkit-transform:translateY(-6px) rotate(-45deg);
+                -moz-transform:translateY(-6px) rotate(-45deg);
+                //.rotate(-45deg);
+                //.translateY(-8px);
+                //bottom:8px;
+            }
+        }
+        .offcanvas-site-cover {
+            @include ease-in(0s, .25s);
+            background-color:rgba(255,255,255, .5);
+            height:9999px;
+            position:absolute;
+            width:100%;
+            z-index:9999;
+        }
+	}
+	
+    .navbar-toggle {
+	    transition: $offcanvas-transition;
+	    margin-left: ($grid-gutter-width / 2); //variables.less
+	    margin-right: ($grid-gutter-width / 2); //variables.less
+        padding:5px;
+        display:inline-block;
+        .icon-bar {
+            @include ease-in(.25s, .25s);
+        }
+	    &:before { //Increase clickable area on button by 30px
+		    $clickable-area: 30px;
+		    text-indent:-9999px;
+		    left: -($clickable-area);
+		    content:".";
+		    //right: -($clickable-area);
+		    bottom: -($clickable-area);
+		    top: -($clickable-area);
+		    position:absolute;
+		    opacity:0;
+		    z-index:9999;
+	    }
+    }
+
+    .navbar-header {
+	    position:relative; // (SM)
+        float:right;
+    }
+
+    .container > .sidebar-offcanvas { //Bootstrap default margin fix
+	    margin-left:0;
+	    margin-right:0;
+    }
+
+    .sidebar-offcanvas {
+	    overflow-x: hidden;
+	    overflow-y: scroll;
+	    //background: $body-bg;
+	    border:0;
+	    height:100%;
+    }
+ .offcanvas-site-cover {
+        @include ease-in(0s, .25s);
+        background-color:rgba(255,255,255, 0);
+        height:0;
+        position:absolute;
+        width:100%;
+        z-index:-9999;
+    }
+    /*******************/
+
+
+
+
+    //This Defaults the off canvas to the right
+    @include offcanvas();
+
+    .site-wrapper {
+	    position:relative;
+	    left:0;
+        //float:left;
+	    transition: $offcanvas-transition;
+    }
+
+    .sidebar-offcanvas {
+	    position:fixed;
+	    transition: $offcanvas-transition;
+    }
+    .navbar-collapse-left {
+	    left: (-$offcanvas-size-xs);
+    }
+    .navbar-collapse-right {
+	    right: (-$offcanvas-size-xs);
+    }
+
+
+    @media (min-width: $screen-sm-min) {
+        .site-wrapper {
+            //width:$container-tablet;
+            float:none;
+        }
+    }
+
+    /*----------*/
+
+
+    /***  Offcanvas Open-state  ***/
+
+    // When offcanvas menu is toggled:
+    body.offcanvas-open {
+	    overflow: hidden;
+    }
+
+/*----------*/
+
+//} // end $media
+

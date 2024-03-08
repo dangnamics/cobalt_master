@@ -1,0 +1,198 @@
+﻿* {
+    outline: 0 !important;
+}
+
+html {
+    font-size: $font-primary-size;
+}
+
+.label{
+    color:inherit;
+}
+body {
+    font-family: $font-primary;
+    font-size: $font-primary-size;
+    line-height: $font-primary-height;
+    color: $primary-p-color;
+}
+
+a {
+    color: $link-color;
+    text-decoration: $link-decoration;
+    &:hover, &:focus, &.focus  {
+        color: $link-hover-color;
+        text-decoration: $link-hover-decoration;
+    }
+}
+
+
+.error-page {
+    &.error-page-1 {
+        .container, .container-fluid {
+            background-color: #FFF;
+        }
+    }
+}
+
+
+strong, b {
+    font-weight: bold;
+}
+
+em strong, strong em, b em, b em, b i, i b {
+    font-weight: bold;
+}
+
+em {
+    font-weight: normal;
+}
+
+// WP TIMYMC EDITOR
+#tinymce {
+    padding: 15px 30px !important;
+    background-color: #fff;
+}
+
+
+.gform_wrapper {
+    max-width: 60%;
+
+    @media (max-width: $screen-xs-max) {
+        max-width: 100%;
+    }
+
+    .ginput_complex {
+        &.ginput_container.has_first_name.no_middle_name.has_last_name span.name_first {
+            margin-right: 0 !important;
+        }
+
+        label {
+            font-weight: $forms-label-weight;
+            font-size: $forms-second-label-font-size;
+            white-space: inherit;
+        }
+
+        input[type=text] {
+        }
+    }
+
+    ul {
+        &.gform_fields {
+            padding-left: 0;
+
+            li {
+                input, select, textarea {
+                    max-width: 320px;
+
+                    @media (max-width: $screen-xs-max) {
+                        max-width: 100%;
+                        width: 100%;
+                    }
+
+                    &.medium {
+                        @media (max-width: $screen-xs-max) {
+                            max-width: 100%;
+                            width: 100%;
+                        }
+                    }
+
+                    border: solid 1px #535C6F;
+                    min-height: 40px;
+                    padding-left: 8px;
+                    border-radius: 3px;
+                }
+            }
+        }
+    }
+
+    .top_label {
+        .gfield_label {
+            font-weight: $forms-label-weight;
+        }
+    }
+
+    .gform_footer {
+        input[type=submit] {
+            height: 50px;
+            width: 200px;
+            text-transform: uppercase;
+            font-size: 23px;
+            background: $brand-secondary;
+            border: none;
+            color: #fff;
+            border-radius: 3px;
+            font-weight: 600;
+        }
+    }
+}
+
+.gform_wrapper.gf_browser_chrome ul.gform_fields li.gfield span.name_first, .gform_wrapper.gf_browser_chrome ul.gform_fields li.gfield span.name_last, .gform_wrapper.gf_browser_chrome ul.gform_fields li.gfield span.name_middle {
+    padding-top: 0 !important;
+}
+
+.gform_wrapper.gf_browser_chrome ul.gform_fields li.gfield span.name_first {
+    display: inline !important;
+}
+
+.gform_wrapper .ginput_complex.ginput_container.has_first_name.no_middle_name.has_last_name span {
+    display: inline !important;
+    padding-right: 0;
+}
+
+
+#gform_1 {
+    input, select, textarea {
+        margin: 0 0 15px;
+        background-color: #fff;
+        border: 1px solid $gform-color;
+        outline: 0;
+        $padding-c-form: 10px;
+        padding-left: $padding-c-form;
+        padding-right: $padding-c-form;
+
+        ::-webkit-input-placeholder,
+        :-moz-placeholder,
+        ::-moz-placeholder,
+        :-ms-input-placeholder {
+            color: $gform-color;
+        }
+    }
+
+    textarea {
+        margin-bottom: 15px;
+    }
+
+    .gform_footer {
+        margin: 0;
+        padding: 0;
+
+        input {
+            background: #0099cc none repeat scroll 0 0;
+            border: 1px solid black;
+            color: white;
+            font-size: 18px;
+            padding: 10px 30px;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.search-form {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.alert-warning {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav {
+    &.post-nav {
+        max-width: 1170px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

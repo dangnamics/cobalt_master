@@ -1,0 +1,122 @@
+﻿//Page Hero
+//.page-template-list, .page-template-templates, .page-template-list-grid, .page-template-stories-list, .donate, .give-now {
+.page, .page-template-templates{
+	.hero {
+		&.hero-1 {
+            background: $brand-primary;                   
+            .container, .container-fluid {
+                width:100%;
+                
+//Begin Container Adjustments
+
+$hero-size-xs:200px;
+/* Landscape phones and down */
+@media (max-width: $screen-xs-max) {
+                .row{
+                    position:relative;
+                    .hero-img{
+                        width:100%;
+                        height:auto;
+                        position:absolute;
+                        top:0;
+                        .featured-image{
+                            height: $hero-size-xs;
+                            position: relative;
+                            //margin-top: -1px;
+                            //margin-left: -120px;                        
+                        }
+                    }
+				    .content {
+                        width:100%;
+                        height:auto;
+                        margin-top:$hero-size-xs;
+                        position:relative;
+                        padding: 15px 25px 18px;
+                        .inner {
+						    //padding:440px 70px 0 70px !important;
+                            float:left;
+                            text-align: center;
+                            width:100%;
+                            max-width:none;
+                            height:auto;
+                            position:relative;
+                            transform:none;
+                            -ms-transform:none;
+                            -webkit-transform:none;
+                            .hdr,p{
+                                text-align:center;
+                            }
+                            .hdr{
+                                font-size:28px;
+                                line-height:38px;
+                                letter-spacing:0.69px;
+                                margin-bottom:.5em;
+                            }
+                            p{
+                                font-size:17px;
+                                line-height:27px;
+                                &:last-of-type{
+                                    margin-bottom:1.4em;
+                                }
+                            }
+  					    }
+				    }
+                }
+}
+
+/* Landscape phone to portrait tablet */
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+                .row{
+                    .hero-img{
+                        width:50%;
+                        .featured-image{
+                            //height: 400px;
+                            //position: absolute;
+                            //margin-top: -1px;
+                            //margin-left: -400px;                        
+                        }
+                    }
+				    .content {
+                        width:100%;
+                        .inner {
+                            width:50%;
+                            margin:0;
+                            padding:0 60px;
+  					    }
+				    }
+                }
+
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+                    .row{
+                        .content{
+                            width:100%;
+                            .inner{
+                                //width:50%;
+                            }
+                        }
+                        .hero-img{
+                            //width:50%;
+                            //height:420px;
+                        }
+                    }
+}
+
+/* Large desktop */
+@media (min-width: $screen-lg-min) {
+        
+
+}
+                
+                
+                
+                
+//End Container                
+                
+                
+            }
+        }
+    }
+}

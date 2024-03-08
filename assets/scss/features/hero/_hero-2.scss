@@ -1,0 +1,15 @@
+﻿section{
+    //hero
+    &.hero{
+        &.hero-2.hero-nth-2{
+            .carousel-inner > .item{
+                width: 100%;
+                margin-left:auto;
+                margin-right:auto;
+            }
+        }
+    }
+}
+
+
+@import "_hero-2-responsive.scss";

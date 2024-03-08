@@ -1,0 +1,60 @@
+/** BKG-TITLE-HEADER.LESS **/
+/* Author: Nick Downs */
+
+
+//Variables
+//Any values that are reused and/or customizable should be defined as variables. If they need to be accessible by other files, use [variables.less]
+@md-bkg-height: 400px; // Medium and above get this size
+@xs-bkg-height: 200px; // Amount of background that shows above page title/description
+
+
+/********************
+* GENERAL
+********************/
+
+.bkg-title-header {
+	background: @gray-light center center no-repeat;
+	width: 100%;
+	font-size: 0; //inline-block spacing fix
+	
+	@media (max-width: @screen-xs-max) {
+			padding-top: @xs-bkg-height;
+			background-position-y: -(@xs-bkg-height / 2); // Crop in on vertical center of background
+	}
+	
+	.title-container {
+		.make-sm-column(5);
+		.make-md-column(4);
+		background: @brand-primary center center no-repeat;
+		display: table;
+		
+		@media (min-width: @screen-md-min) {
+			height: @md-bkg-height;
+		}
+	}
+	
+	.inner {
+		display: table-cell;
+		vertical-align: middle;
+		padding: 3rem 0;
+		
+		@media (min-width: @screen-sm-min) {
+			padding: 3rem 1rem; //add extra padding on larger devices
+		}
+	}
+	
+	.description, .title {
+		color: white;
+	}
+	
+	.title {
+		margin-top: 0;
+	}
+	
+	.description {
+		margin-bottom: 0;
+	}
+}
+
+
+/*******************/

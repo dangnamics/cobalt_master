@@ -1,0 +1,76 @@
+/* Landscape phones and down */
+@media (max-width: @screen-xs-max) {
+
+	.staff {
+		&.staff-1 {
+			.container, .container-flow {
+				background-color:#FFF;
+				.staff-group-hdr-row {
+					padding:0 (@grid-gutter-width / 2);
+					text-align:center;
+				}
+				.staff-member-container {
+					margin-bottom:3em;
+					.staff-member-img {
+						width:60%;
+						margin:0 auto;
+					}
+				}
+			}
+		}
+	}
+}
+
+/* Landscape phone to portrait tablet */
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+
+	.staff {
+		&.staff-1 {
+			.container, .container-flow {
+				background-color:#FFF;
+				.staff-group-hdr-row {
+					padding:0 @content-padding-sm;
+				}
+				.staff-group-item-row {
+					padding:0 (@content-padding-sm - (@grid-gutter-width / 2));
+				}
+			}
+		}
+	}
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+
+	.staff {
+		&.staff-1 {
+			.container, .container-flow {
+				background-color:#FFF;
+				.staff-group-hdr-row {
+					padding:0 @content-padding-md;
+				}
+				.staff-group-item-row {
+					padding:0 (@content-padding-md);
+				}
+			}
+		}
+	}
+}
+
+/* Large desktop */
+@media (min-width: @screen-lg-min) {
+
+	.staff {
+		&.staff-1 {
+			.container, .container-flow {
+				background-color:#FFF;
+				.staff-group-hdr-row {
+					padding:0 @content-padding-lg;
+				}
+				.staff-group-item-row {
+					padding:0 (@content-padding-lg - (@grid-gutter-width / 2));
+				}
+			}
+		}
+	}
+}

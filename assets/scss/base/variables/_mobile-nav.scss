@@ -1,0 +1,43 @@
+﻿/* Scss Name: Utility Navigation
+ * Discription: All default settings for navigation
+ * Date: 01/01/2017
+ * Last Modified: 01/01/2017
+ * Notes : 01/01/2017
+ * 
+ */
+
+$navbar-top-level-active-background-color: #EDCA4A;
+$navbar-top-level-background-color: #fff;
+$navbar-sub-background-color: #f2f8f2;
+
+$mobile-toplevel-font-size:21px;
+$mobile-secondlevel-font-size:17px;
+
+$mobile-nav-color:$brand-primary;
+$mobile-nav-bg-focus:$brand-primary;
+$mobile-nav-transform:uppercase;
+$mobile-nav-weight:normal;
+$mobile-nav-border:solid 1px $brand-primary;
+$mobile-nav-font-size:$font-primary-size;
+$mobile-nav-padding:0 0 0  0.8333rem;
+$mobile-nav-margin:0;
+
+$mobile-nav-hover-bg:#eee;
+$mobile-li-bg-color:#f3f4f5;
+
+$donate-button-bar-height:57px;
+
+$mobile-subnav-font-size:0.8333rem;
+$mobile-subnav-weight:bold;
+$mobile-subnav-font-color:#3B3B3B;
+
+$mobile-open-color:#fff;
+$mobile-open-weight:bold;
+$mobile-open-caret-bg:darken($brand-primary,10%);
+
+$mobile-donate-bg:$donate-btn-bg;
+$mobile-donate-font-size: 1.556rem;
+$mobile-donate-letter-spacing:1px;
+$mobile-donate-font-color:$donate-btn-color;
+
+

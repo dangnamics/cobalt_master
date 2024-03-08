@@ -1,0 +1,103 @@
+﻿
+.list-page, .page-template-list, .search {
+
+    section {
+        &.content{
+            margin-top:50px;
+            .container{
+                padding:0;
+                 p{
+                padding:0 40px;
+                font-size:1.333rem;
+                line-height:32px;
+            }
+            }
+           
+        }
+        &.newsfeed {
+            margin: $list-section-margin;
+            padding: $list-section-padding;
+
+
+            .container {
+                margin: $list-container-margin;
+                padding: $list-container-padding;
+                max-width:1170px;
+                .newsfeed {
+                    padding:0;
+                    .newsfeed-item {
+                        border-top: $accent-border;
+                        padding-left: 40px;
+                        padding-right: 40px;
+                        .container-fluid {
+                              width: 1170px;
+                            .row {
+                                padding: $list-item-container-padding;
+                                margin-left:0;
+                                margin-right:0;
+                                .news-items-left {
+                                    float: left;
+                                    //max-width: $newsfeed-image-size-width;
+                                    //width: $newsfeed-image-area-width;
+                                }
+
+                                .newsfeed-information {
+                                    float: none;
+                                    margin-left: $newsfeed-image-area-width;
+                                    padding-left: $newsfeed-gutter-width;
+                                    width: 100% - $newsfeed-image-area-width;
+                                    //max-width:590px;
+                                    h3 {
+                                        margin-top:-10px;
+                                        font-size:$list-h3-size;
+                                        font-weight:bold;
+                                        color:  $list-h3-color;
+                                        line-height:50px;
+                                        a{
+                                             color:  $list-h3-color;
+                                        }
+                                    }
+
+                                    p {
+                                        //line-height: $font-primary-height;
+                                        line-height: 28px;
+                                        //font-size: $font-primary-size;
+                                        font-size:18px;
+                                        color: $primary-p-color;
+                                    }
+
+                                    a {
+                                        &.secondary-text-cta {
+                                            @include list-grid-link-styles($list-btn,$grid,$list-font-color, $list-btn-bg, $list-btn-border, $list-btn-radius, $list-btn-weight, $list-btn-align, $list-btn-text-transform, $list-btn-text-style);
+                                            font-size: $list-btn-font-size;
+                                            line-height: $list-btn-line-height;
+                                            letter-spacing: $list-btn-letter-spacing;
+                                            &:hover{
+                                                text-decoration:underline;
+                                            }
+                                           
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .newsfeed-item:first-child {
+                        border-top: 0px;
+
+                        .container-fluid {
+                            .row {
+                                
+
+                                padding-top: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@import "_list-1-responsive.scss";

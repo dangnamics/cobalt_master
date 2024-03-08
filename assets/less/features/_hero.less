@@ -1,0 +1,31 @@
+/** HERO.LESS **/
+/* Author: Nick Downs */
+
+
+/********************
+* GENERAL
+********************/
+
+div.hero {
+	width:100%;
+	background: @brand-primary center center no-repeat;
+	background-size: cover;
+	position: relative;
+	overflow:hidden; //fix IE9 overflow
+
+	.hero-inner {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+
+		@media (max-width: @screen-xs-max) {
+			left:0;
+			transform: translate(0, -50%);
+		}
+	}
+}
+
+
+
+/*******************/

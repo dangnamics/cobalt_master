@@ -1,0 +1,171 @@
+﻿section {
+    &.emailsignup {
+        background:$email-signup-bg no-repeat scroll top right;
+        color: $brand-primary-font-color;
+        border-top: 0px solid $brand-primary-accent;
+
+        &.emailsignup-1, &.emailsignup-3 {
+            .container, .container-fluid {
+                padding-top: 0;
+                padding-bottom: 16px;
+                padding-left:0px;
+                padding-right:0;
+                position: relative;
+                width: 1040px;
+                h4 {
+                    font-size: $email-h4-size;
+                    color: $email-font-color;
+                    margin-top: 20px;
+                    font-family: $font-primary;
+                    text-transform: $email-font-transform;
+                    font-weight:bold;
+                }
+
+                h5 {
+                    font-size:$email-h5-size;
+                    margin-bottom: 0px;
+                }
+
+                p {
+                    color: #fff;
+                    font-size: 20px;
+                }
+
+                #om-post-action-header {
+                    #om-post-action-optin-title {
+                        margin-bottom: 0;
+                        font-weight: bold;
+                    }
+                }
+
+                #om-post-action-footer {
+                    #om-post-action-optin-email, #om-post-action-optin-submit {
+                        padding: 6px 10px 2px;
+                    }
+
+                    #om-post-action-optin-submit {
+                        &:hover {
+                            background-color: $brand-primary;
+                        }
+                    }
+                }
+
+                #om-post-action-optin-title {
+                    span {
+                        color: $brand-primary-font-color;
+                    }
+                }
+
+                .social-icons-1 {
+                    a {
+                        margin-left: 20px;
+
+                        &:first-child {
+                            margin-left: 0;
+                        }
+                    }
+                }
+
+                .gform_wrapper label.gfield_label+div.ginput_container{
+                    margin-top:0;
+                   
+                }
+                #gform_wrapper_1, #gform_wrapper_3 {
+                     width:100%;
+                    overflow: hidden;
+                    max-width:100%;
+                    margin:0;
+                    padding-right:0px;
+                    
+                    li {
+                        &:nth-child(1) {
+                            width:50%;
+                            min-width:534px;
+                            float: left;
+                            clear: none;
+                             padding-right:0px;
+                             margin-top:0px;
+                        }
+
+                        &:nth-child(2) {
+                            width: 24%;
+                            margin-left: 4px;
+                            float: left;
+                            clear: none;
+
+                            .ginput_container {
+                            }
+
+                            input {
+                                width: 100%;
+                                margin-left: 13px;
+                            }
+                        }
+
+                        input[type="text"] {
+                            color: $primary-p-color;
+                            border: none;
+                            min-height: 46px;
+                            font-size: 20px;
+                            border-radius:$email-signup-radius;
+                        }
+                    }
+
+                    label {
+                        display: none;
+                    }
+
+                    .gform_footer {
+                        margin-top: -1px;
+                        width: auto;
+                        padding: 0;
+                        float: right;
+                        clear: none;
+
+                        input {
+                            background: $email-signup-btn-bg;
+                            color: $email-signup-btn-font-color;
+                            box-shadow: none;
+                            border: none;
+                            border-radius:$email-btn-radius;
+                            padding: $email-btn-padding;
+                            text-transform: $email-btn-text-transform;
+                            font-style: $email-btn-text-style;
+                            
+                            min-height: 46px;
+                            font-size: $email-font-size;
+                        }
+                    }
+                }
+.gf_browser_chrome ul.gform_fields li.gfield span.name_last
+                .gform_wrapper {
+                    label {
+
+                        &.gfield_label + div {
+                            &.ginput_container {
+                                margin-top: 0;
+                            }
+                        }
+                    }
+                    &.gf_browser_chrome {
+                        ul{
+                            &.gform_fields{
+                                li{
+                                    &.gfield{
+                                        span{
+                                            &.name_last, &.name_first{
+                                                padding-top:0px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@import "_email-signup-1-responsive";

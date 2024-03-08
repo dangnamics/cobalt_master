@@ -1,0 +1,39 @@
+@searchbar-color:#999;
+@searchbar-height:30px;
+@searchbar-padding:2px;
+
+.search {
+	&.search-1 {
+		.container, container-fluid {
+			padding-top:(@grid-gutter-width / 2);
+			padding-bottom:(@grid-gutter-width / 2);
+		}
+	}
+}
+
+.search-container {
+  &.search-1 {
+	  margin:@searchbar-padding 0;
+	  border:1px solid @searchbar-color;
+	  background-color:#FFF;
+	  padding:@searchbar-padding;
+	  input, button {
+		  border:none;
+		  height:(@searchbar-height - (@searchbar-padding *2));
+		  line-height:(@searchbar-height - (@searchbar-padding *2));
+		  color:@searchbar-color;
+	  }
+	  input {
+		  text-indent:10px;
+	  }
+	  button {
+		  width:@searchbar-height;
+		  background-color:#FFF;
+		  float:right;
+		  &:hover {
+			  color:#fff;
+			  background-color:@searchbar-color;
+		  }
+	  }
+	}
+}

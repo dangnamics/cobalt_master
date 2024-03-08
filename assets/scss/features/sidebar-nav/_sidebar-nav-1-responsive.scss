@@ -1,0 +1,204 @@
+$off-canvas-nav-size-mobile: 85%;
+$off-canvas-nav-size-tablet: 55%;
+
+.offcanvas-open {
+    .site-wrapper {
+        .side-nav-bar {
+            &.hidden-sm {
+                display: block !important;
+
+                .navbar-collapse {
+                    &#sidebar {
+                        @media (max-width: $screen-sm-max) {
+                            // at sm, this goes up to the mobile size.
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+.site-wrapper {
+    .navbar-toggle {
+        display: inline;
+    }
+
+    .side-nav-bar {
+        position: relative;
+
+        .navbar-collapse {
+            top: -5px;
+             padding: 125px 0 22px;
+ @media (max-width: $screen-xs-max) {
+                    padding: 72px 0 22px;
+                }
+                border-top: none;
+            .offcanvas-home-logo {
+                position: fixed;
+                top: 0;
+                right: 0;
+                z-index: 10005;
+                background: #fff;
+                width: $off-canvas-nav-size-tablet;
+                    @media(max-width: $screen-xs-max){
+                        width:$off-canvas-nav-size-mobile;
+                    }
+                padding-bottom: 0;
+                border-bottom: 1px solid #a6a6a8;
+
+               & > div {
+                        text-align: center;
+                        padding-bottom: 6px;
+
+                        a {
+                            display: inline-block;
+
+                            img {
+                                &#logo {
+                                    width: 100%;
+                                    padding-top: 5%;
+
+                                    @media (max-width: $screen-sm-max) {
+                                        padding: 0;
+                                        width: auto;
+                                        height: 37px;
+                                    }
+                                }
+                            }
+
+                            @media (min-width:$screen-sm-min) {
+                                padding-top: 31px !important;
+                                padding-bottom: 26px !important;
+
+                                img#logo {
+                                    height: 100%;
+                                }
+                            }
+                        }
+                    }
+            }
+        }
+    }
+}
+
+.sidebar-offcanvas {
+    section {
+        &.nav-nth-1 {
+
+            .container {
+                padding: 0 0;
+                margin: 0 0;
+
+                nav {
+                    &.navbar-collapse {
+                        padding: 0 0;
+                        margin: 0 0;
+                        width: 100%;
+
+                        ul {
+                            overflow: hidden;
+
+                            li {
+                                border-bottom: $mobile-nav-border;
+                                text-transform: $mobile-nav-transform;
+                                font-size: $mobile-nav-font-size;
+                                color: $mobile-nav-color;
+
+                                a {
+                                    color: $mobile-nav-color;
+
+                                    &.dropdown-toggle {
+                                        &.open {
+                                            color: $mobile-open-color;
+                                            font-weight: $mobile-open-weight;
+                                            background: $mobile-nav-bg-focus;
+
+                                            a {
+                                                &:focus, &:active {
+                                                    background: $mobile-open-caret-bg;
+                                                    //color:$mobile-open-color;
+                                                }
+                                            }
+
+                                            span {
+                                                &.caret-wrap {
+                                                    &.open {
+                                                        background: $mobile-open-caret-bg;
+
+                                                        b {
+                                                            &.caret {
+                                                                color: $brand-secondary-font-color;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+
+                                        span.caret-wrap {
+                                            background-color: #D9DADE;
+
+                                            b {
+                                                &.caret {
+                                                    color: $brand-primary;
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    span {
+                                        &.caret-wrap {
+                                            background: $brand-primary-font-color;
+
+                                            b {
+                                                &.caret {
+                                                    color: $brand-primary;
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    &:focus {
+                                        color: $brand-primary-font-color;
+                                    }
+                                }
+
+                                ul {
+                                    li {
+                                        text-transform: none;
+                                        font-size: $mobile-subnav-font-size;
+                                        border-bottom: solid #DCDCDC 0px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &.nav-nth-2 {
+            margin-top: 12px;
+
+            .container {
+                ul {
+                    list-style: none;
+
+                    li {
+                        list-style: none;
+                        font-size: $mobile-subnav-font-size;
+                        font-weight: $mobile-subnav-weight;
+
+                        a {
+                            color: $primary-p-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

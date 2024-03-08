@@ -1,0 +1,187 @@
+﻿//Default Main Navigation
+.navbar-nav > li > .dropdown-menu {
+    padding: 22px 0;
+}
+
+nav {
+    &.navbar {
+        font-family: $font-headline-secondary;
+        font-size: $nav-primary-size;
+        float:right;
+    }
+
+    .navbar-collapse {
+
+        nav {
+            .navbar-toggle {
+                border-color: $brand-primary;
+
+                .icon-bar {
+                    background-color: $brand-primary;
+                }
+            }
+
+            &.header-nav {
+                ul {
+                    li {
+                        b.caret {
+                            display: none;
+                        }
+
+                        &.active {
+                            span {
+                                border-bottom: $nav-focus-decoration;
+                            }
+                        }
+
+                        &:hover {
+                            > a {
+                                background:none;
+                            } 
+                        }
+
+                        a {
+                            color: $nav-primary-color;
+                        }
+
+                        &.dropdown {
+                            &:hover {
+                                ul {
+                                    padding-bottom: 0;
+                                    margin-bottom: 0;
+
+                                    &.dropdown-menu {
+                                        right: auto;
+                                        left: 0;
+
+                                        @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+                                            right: 0;
+                                            left: auto;
+                                        }
+
+                                        background:none;
+                                        font-family: $font-primary;
+                                        font-size: $nav-secondary-size;
+                                        display: block;
+                                        margin-top: 0;
+                                        border: 0px;
+                                        box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+                                        border-radius: 0px;
+
+                                        li {
+                                            background-color: rgba(243,240,236,.89);
+                                            a {
+                                                padding-top: 10px;
+                                                padding-bottom: 10px;
+                                                font-size: $nav-secondary-size;
+                                                font-weight: $nav-secondary-weight;
+                                                text-transform: $nav-secondary-transform;
+                                                color: $nav-secondary-color;
+
+                                                &:hover {
+                                                    color: #fff;
+                                                    background-color: $nav-secondary-hover-bg;
+                                                }
+                                            }
+
+                                            &.active {
+                                                color: $nav-active-color;
+                                                font-weight: $nav-active-weight;
+
+                                                a {
+                                                    background: $nav-active-bg;
+                                                    color: $nav-active-color;
+                                                }
+                                            }
+
+                                            ul {
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//Utility Navigation Defaults
+.utility-bar {
+    ul {
+        li {
+            nav {
+                &.header-nav {
+                    ul {
+                        li {
+                            a {
+                                color: $utility-primary-color;
+                                font-size: $utility-font-size;
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//footer navigation
+
+section {
+    &#footer-nav {
+        background: $footer-bg;
+    }
+
+    &.nav {
+        &.nav-nth-1 {
+        }
+
+        .footer-nav {
+            background: $footer-bg;
+
+            &.sub-nav {
+                padding: 10px 0;
+
+                nav {
+                    &.footer-nav {
+                        ul {
+                            padding: 1.667rem 1.556rem;
+                            border-bottom: solid 1px $brand-primary-accent;
+
+                            li {
+                                a {
+                                    display: inline;
+                                    padding: 0;
+                                    color: $footer-nav-color;
+                                    text-decoration: $footer-decoration;
+                                    font-weight: $footer-nav-weight;
+
+                                    &:hover {
+                                        color: $footer-hover-color;
+                                        display: inline;
+                                        background: none;
+                                        text-decoration: $footer-hover-decoration;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+.navbar-toggle {
+    .icon-bar {
+        background-color: $brand-primary;
+    }
+}
+
+@import "_nav-1-responsive";

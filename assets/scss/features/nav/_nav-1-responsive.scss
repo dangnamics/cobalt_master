@@ -1,0 +1,25 @@
+﻿/* Landscape phone to portrait tablet */
+@media  (max-width: $screen-sm-max) {
+header{
+    &.header-1{
+        .navbar-header{
+            position: absolute;
+      top: 0;
+      right: 0;
+        }
+      
+    }
+}
+  .navbar-toggle {
+      //display:inline-block !important;
+    }
+  .side-nav-bar{
+      &.hidden-sm{
+          display:block;
+      }
+  }
+  .navbar-header{
+      float:right;
+  }
+	 
+}

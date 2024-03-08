@@ -1,0 +1,38 @@
+/** EMAILSIGNUP.LESS **/
+/* Author: Nick Downs */
+
+
+//Variables
+//Any values that are reused and/or customizable should be defined as variables. If they need to be accessible by other files, use [variables.less]
+
+
+
+
+/********************
+* General
+********************/
+
+.emailsignup {
+	background: @brand-primary;
+	padding: 20px 0 50px 0;
+	text-align: center;
+	
+	h3 {
+		color: white;
+		margin-bottom: 1.5em;
+	}
+	
+	.form-group {
+		@media (min-width: @screen-sm-min) { // Remove padding on mobile devices
+			padding-right: 40px;
+		}
+	}
+	
+	label {
+		padding-right: 10px;
+		color: white;
+	}
+	
+}
+
+/*******************/

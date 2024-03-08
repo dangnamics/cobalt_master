@@ -1,0 +1,525 @@
+﻿//HOME PAGE HERO DEFAULTS
+$hero-size: 700px !default;
+$header-height: 178px !default;
+.home{
+    section{
+        &.hero{
+            
+            //HERO-1
+            &.hero-1 {
+		        //background-color: $brand-primary;
+		        > .container-fluid {
+			        padding-left:0;
+			        padding-right:0;
+			        .jumbotron {
+				        margin-bottom:0;
+				        border-radius:0;
+				        background-repeat: no-repeat;
+				        .container, .container-fluid {
+                            h1{
+                                font-family:$font-headline-primary;
+                                 text-transform:uppercase;
+                            }
+					        background-color:transparent; 
+				        }
+			        }
+                    .videotron {
+                        overflow:hidden;
+                        //max-width:1500px;
+                        //margin:0 auto;
+                        position:relative;
+                        min-height: $hero-size - 200px;
+                        background-size:cover;
+                        background-position:center;
+                        &.contain, &.cover {
+                            //min-height:$hero-size;
+                            //height:$hero-size;
+                            max-height: calc(100vh - #{$header-height});
+                            height:calc(56.25vw);
+                            min-height: 0;
+                        }
+                        &.contain {
+                            video{
+                                &.hero-video{
+                                    width:auto;
+                                    height:100%;
+                                    @include centerHorizontally();
+                                }
+                            }
+                        }
+                        &.cover{
+                            video{
+                                &.hero-video{
+                                    width:100%;
+                                    height:auto;
+                                    overflow:hidden;
+                                    @include centerFully();
+                                }
+                            }
+                        }
+                        &.overflow {
+                            height:auto;
+                            .container{
+                                height:calc(100% - ((100vh - #{$header-height}) * .5));
+                                min-height: calc((100% * .5) + 58px);
+                                max-height:none;
+                                padding:0;
+                                overflow:visible;
+                                .caption{
+                                    height:auto;
+                                    width:100%;
+                                    bottom: calc((100% - ((100vh - #{$header-height}) * .5)) + 30px);
+                                    @include centerHorizontally();
+                                }
+                            }
+                            .video-container{
+                                width:auto;
+                                height:auto;
+                                position:relative;
+                                overflow:visible;
+                                video{
+                                    width:100%;
+                                    height:100%;
+                                }
+                            }
+                        }
+                        .video-container{
+                            //z-index:-1;
+                            position:absolute;
+                            width:100%;
+                            height:100%;
+                            overflow:hidden;
+                        }
+                        video{
+                            display:block;
+                            &.hero-video{
+                                min-height:$hero-size - 200px;
+                                //min-width:100%;
+                            }
+                        }
+				        .container {
+                            z-index:1;
+                            width: 100%;
+                            position:absolute;
+                            bottom:11%;
+					        .caption {
+                                .btn-donate{
+                                }
+					        }
+
+				        }
+                    }
+
+                    p{
+                        font-family:$font-primary;
+                    }
+		        }
+		
+		        &.hero-nth-1 {
+			        .jumbotron {
+                        min-height:$home-hero-height;
+				        margin-bottom:0;
+				        border-radius:0;
+				        background-repeat:no-repeat;
+                        background-position:top right;
+                        background-size:cover;
+                       
+				        .container, .container-fluid {
+					        position:relative;
+					        background-color:transparent;
+					        .caption {
+						        background:none;
+						        color:#FFF;
+                                
+                                h1, h2, h3, h4, h5, h6, .hdr {
+	                                letter-spacing:0;
+                                }
+						        .hdr {
+							        
+							        margin-top:0;
+							        text-transform:uppercase;
+						        }
+						        .btn-donate {
+                                    font-family:$font-primary;
+                                    border-radius:$donate-btn-radius;
+                                    font-size: 30px;
+                                      padding:15px 28px;
+                                      line-height: 54px;
+                                      letter-spacing: 0.17em;
+                                      color:$donate-btn-color;
+                                      background-color: $donate-btn-bg;
+                                      display: inline-block !important;
+                                    margin-top: 7%;
+                                    letter-spacing: -0.25px;
+							        //@include donate-styles($donate-btn-bg);
+							       
+						        }
+                                h1{
+                                    &.hdr{
+                                        font-size: 108px;
+                                    }
+                                }
+                                p{
+                                    font-size:30px;
+                                    line-height: 46px;
+                                }
+					        }
+				        }
+			        }
+		        }
+		        &.hero-nth-2 {
+			        .jumbotron {
+				        padding:0;
+				        .container {
+					        //background-color:rgba(0, 0, 0, 0.7);
+					        width:100%!important;
+					        .caption {
+						        text-align:center;
+						        .hdr, p {
+							        margin:0 0 40px;
+							        color:#FFF;
+						        }
+						        p:last-child {
+							        margin-bottom:0;
+						        } 
+						        .btn-donate {
+							        @include donate-styles($donate-btn-color);
+						        }
+					        }
+				        }
+			        }
+		        }
+		        .container {
+			        padding: 0;
+			        .row {
+				        margin:0;
+			        }
+			        .hero-img {
+				        .featured-image {
+					        height:450px;
+				        }
+			        }
+			        .content {
+				        .inner {
+					        padding-top:60px;
+					        .hdr {
+						        font-size:32px;
+						        line-height: 40px;
+						        text-transform: none;
+					        }
+					        .btn-donate {
+						        @include donate-styles($donate-btn-color);
+						        text-decoration: none;
+					        }
+				        }
+			        }
+		        }
+	        }
+        }
+    }
+}
+.page .hero {
+	&.hero-1 {
+		background-color: $brand-primary;
+        color:$brand-primary-font-color;
+		> .container-fluid {
+			padding-left:0;
+			padding-right:0;
+			.jumbotron {
+				margin-bottom:0;
+				border-radius:0;
+				background-repeat: no-repeat;
+				.container, .container-fluid {
+					background-color:transparent; 
+				}
+			}
+		}
+		
+		&.hero-nth-1 {
+			.jumbotron {
+				margin-bottom:0;
+				border-radius:0;
+				background-repeat:no-repeat;
+				.container, .container-fluid {
+					position:relative;
+					background-color:transparent;
+					.caption {
+						background-color:$brand-primary;
+						color:#FFF;
+                        h1, h2, h3, h4, h5, h6, .hdr {
+	                        letter-spacing:0;
+                        }
+						.hdr {
+							
+							margin-top:0;
+							text-transform:uppercase;
+						}
+						.btn-donate {
+							@include donate-styles($donate-btn-bg);
+							text-decoration: none;
+						}
+					}
+				}
+			}
+		}
+		&.hero-nth-2 {
+			.jumbotron {
+				padding:0;
+				.container {
+					//background-color:rgba(0, 0, 0, 0.7);
+					width:100%!important;
+					.caption {
+						text-align:center;
+						.hdr, p {
+							margin:0 0 40px;
+							color:#FFF;
+						}
+						p:last-child {
+							margin-bottom:0;
+						} 
+						.btn-donate {
+							@include donate-styles($donate-btn-color);
+						}
+					}
+				}
+			}
+		}
+		.container {
+			padding: 0;
+			.row {
+				margin:0;
+			}
+			.hero-img {
+				.featured-image {
+					height:400px;
+				}
+			}
+			.content {
+				.inner {
+					padding-top:60px;
+					.hdr {
+						font-size:32px;
+						line-height: 40px;
+						text-transform: none;
+					}
+					.btn-donate {
+						@include donate-styles($donate-btn-color);
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
+}
+
+.page-template-list, .page-template-stories-list, .donate, give-now {
+	.hero {
+		&.hero-1 {
+            background-color: $brand-primary;
+            color:$brand-primary-font-color;
+			.jumbotron {
+				.container {
+					.caption {
+						.hdr {
+							
+						}
+					}
+				}
+			}
+            .container, .container-fluid {
+				.content {
+					.inner {
+						padding-left:0;
+						.hdr {
+
+                            color:$brand-primary-font-color;
+							font-family:$font-headline-primary;
+                             text-transform:uppercase;
+						}
+						p{
+							@include font-regular();
+							font-size:23px;
+						}
+						br {
+							display:none;
+						}
+					}
+				}
+                }
+            .hero-container{
+                &.container{
+                    &.hero-size-grid-page-hero-thumbnail{
+                        .hero-img {
+				            .featured-image {
+					            height:350px;
+				            }
+			            }
+                    }
+                }
+        
+            }
+            
+		}
+	}
+}
+
+
+.page-template-stories-list {
+	.hero {
+		&.hero-1 {
+			background-color:$brand-primary;
+			> .container, > .container-fluid {
+				position:relative;
+				padding:0;
+				.content {
+					position:absolute;
+					top:0;
+					left:0;
+					width:100%;
+					.inner {
+						.hdr {
+							color:#FFF!important;
+						}						
+					}
+				}
+				.hero-img {
+					float:none;
+					width:100%;
+                    .featured-image {
+						height:350px;
+					}
+				}
+			}
+		}
+	}
+}
+.page-template-list-grid {
+	.hero {
+		&.hero-1 {
+			
+			.container, .container-fluid {
+				.content {
+					.inner {
+						padding-left:0;
+						.hdr {
+							font-size: 58px;
+							@include font-medium();
+							    line-height: 60px;
+    							margin-top: 40px;
+    							margin-bottom:26px;
+						}
+						p{
+							@include font-regular();
+							font-size:23px;
+						}
+						br {
+							display:none;
+						}
+					}
+				}
+				.hero-img {
+					.featured-image {
+						height:350px;
+					}
+				}
+			}
+		}
+	}
+}
+
+//HOME PAGE HERO DEFAULTS
+@import '../../base/_mixins.scss';
+
+section{
+    .hero{
+        &.hero-1{
+        }
+        .container{
+            width:inherit!important;
+        }
+            
+     }
+}
+$hero-height:320px;
+//Page Hero
+.page-template-list, .page-template-templates, .page-template-list-grid, .page-template-stories-list, .donate, .give-now {
+	.hero {
+		&.hero-1 {
+            background: radial-gradient(ellipse at center, rgba(206,40,50,1) 81%,rgba(171,7,16,1) 119%);                    
+			.jumbotron {
+				.container {
+                    font-family: lato;
+					.caption {
+						.hdr {
+							color:#fff;
+                            font-size:40px;
+						} 
+					}
+				}
+			}
+            .container, .container-fluid {
+                width:100%;
+
+                .row{
+                    .content {
+                        width:$container-lg;
+                        height:$hero-height;
+                        float:none;
+                        margin:0 auto;
+                        padding:0;
+                        @include centerHorizontally();
+                        .inner {
+						    padding:0 15px;
+                            float:right;
+                            text-align: left;
+                            width:42.5%;
+                            max-width:460px;
+                            margin-top: 0;
+                            @include centerVertically();
+						    .hdr {
+                                margin:0;
+                                font-size:40px;
+                                font-family:$font-headline-secondary;
+                                color:$brand-primary;
+                                font-weight:bold;
+                                text-transform:uppercase;
+                                text-align: left;
+                                margin-top: 0;
+                                line-height: 60px;
+                            
+						    }
+						    p{
+                                font-family:$font-headline-third;
+							    font-size:20px;
+                                line-height:32px;
+                                text-align: left;
+                                font-weight:normal;
+                                 color:$brand-primary;
+						    }
+						    br {
+							    display:none;
+						    }
+					    }
+				    }
+                    .hero-img{
+                        width:56.5%;
+                        height:$hero-height;
+                        //overflow:hidden;
+                        padding:0;
+                        margin:0;
+                        float:right;
+                        .featured-image{
+                            height:$hero-height;
+                            background-position:center;
+                            background-size:cover;
+                            background-repeat:no-repeat;
+                        }
+                    }
+                }
+            }
+		}
+
+	}
+}
+
+@import "_hero-1-responsive";

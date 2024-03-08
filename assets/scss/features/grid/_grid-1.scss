@@ -1,0 +1,59 @@
+﻿section{
+    &.grid{
+       
+        h2{
+            
+            font-size:36px;
+            text-transform:$font-h2-transform;
+            color:$font-h2-color;
+            margin: $h2-margin;
+            padding:$h2-padding;
+            font-weight:bold;
+        }
+        text-align: $h2-alignment;
+
+        a{
+            display:block;
+            
+            &.cta{
+                margin:$grid-cta-margin;
+                font-size:$grid-btn-font-size;
+                @include list-grid-link-styles($grid-btn, $grid, $grid-font-color, $grid-btn-bg, $grid-btn-border, $grid-btn-radius, $grid-btn-weight, $grid-btn-align, $grid-btn-text-transform, $grid-btn-text-style );
+                line-height:$grid-btn-line-height;
+                letter-spacing:$grid-btn-letter-spacing;
+                padding: .9rem  1.2rem;
+            }
+        }
+        p{
+            //font-size:$p-font-size;
+            font-size:16px;
+            line-height: 28px;
+            margin: $grid-p-margin;
+            padding: $grid-p-padding;
+            max-width: 420px;
+            text-align: left;
+        }
+        .img-responsive{
+            display:inline;
+        }
+        .container{
+            .row{
+                padding: 42px 0 7px;
+                border-top:$grid-row-border;
+                .grid-item{
+                    margin:$grid-item-margin;
+                    padding:$grid-item-padding;
+                    a{
+                        max-width:440px;
+                        margin:0 auto;
+                    }
+                }
+                &:nth-of-type(1){
+                    border-top:0px;
+                }
+            }
+        }
+    }
+}
+
+@import "_grid-1-responsive.scss";

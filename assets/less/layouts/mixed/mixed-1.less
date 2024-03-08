@@ -1,0 +1,15 @@
+section {
+	&.mixed {
+		&.mixed-1 {
+			.container, container-fluid {
+				background-color:@bg-color-mixed;
+				.mixed-col-title {
+					color:@brand-primary;
+					text-transform:uppercase;
+				}
+			}
+		}
+	}
+}
+
+@import: "mixed-1-responsive";

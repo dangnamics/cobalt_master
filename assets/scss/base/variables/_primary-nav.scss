@@ -1,0 +1,58 @@
+﻿/* Scss Name: Primary Navigation
+ * Discription: All default settings for navigation
+ * Date: 01/01/2017
+ * Last Modified: 01/01/2017
+ * Notes : 01/01/2017
+ * 
+ */
+
+$off-canvas-nav-size-mobile:85%;
+$off-canvas-nav-size-tablet:55%;
+$off-canvas-nav-size-tablet-landscape:45%;
+
+
+$nav-font-family:$font-secondary;
+
+
+$navbar-height:                    55px;
+$navbar-margin-bottom:             $line-height-computed;
+$navbar-border-radius:             $border-radius-base;
+$navbar-padding-horizontal:        floor(($grid-gutter-width / 2));
+$navbar-padding-vertical:          (($navbar-height - $line-height-computed) / 2);
+$navbar-collapse-max-height:       340px;
+
+$nav-primary-size: 18px;
+$nav-primary-color:#3B7840;
+$nav-primary-transform:normal;
+$nav-primary-decoration:none;
+$nav-primary-weight:bold;
+
+$nav-secondary-size:1.222rem; // 22px
+$nav-secondary-color:#3B7840;
+$nav-secondary-transform:normal;
+$nav-secondary-decoration:none;
+$nav-secondary-weight:normal;
+
+$nav-focus-decoration: 3px solid #F07848;
+$nav-primary-hover-bg: none;
+$nav-secondary-hover-bg:$brand-primary;
+
+$nav-active-color:#3B7840;
+$nav-active-weight:bold;
+$nav-active-bg:none;
+
+/*
+* Utility Navigation Colors
+*/
+$utility-primary-color:#3A3232;
+$utility-secondary-color:$utility-primary-color;
+
+
+
+/************************************
+  Utility Navigation defaults
+
+*************************************/
+
+$utility-font-size:16px;
+$utility-font-family:$font-headline-secondary;

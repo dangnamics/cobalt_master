@@ -1,0 +1,71 @@
+/** GRID.LESS **/
+/* Author: Nick Downs */
+
+
+//Variables
+//Any values that are reused and/or customizable should be defined as variables. If they need to be accessible by other files, use [variables.less]
+@grid-item-max-width: 400px;
+@grid-title-image-height: 200px;
+
+
+/********************
+* General
+********************/
+
+.grid-2 {
+	
+	.grid-row {
+		padding-left: 0;
+		padding-right: 0;
+		
+		@media (min-width: @screen-sm-min) {
+			padding-top: 3rem; //padding between rows
+			padding-bottom: 3rem; //padding between rows
+		}
+		
+		&:nth-child(odd) {
+			@media (min-width: @screen-sm-min) {
+				background:@gray-lighter; //background for alternating rows
+			}
+		}
+	}
+	
+	.grid-item {
+		@media (max-width: @screen-xs-max) {
+			margin-top: 3rem; //vertical spacing between items when stacked
+		}
+		
+		.inner {
+			max-width: @grid-item-max-width; //wrap copy to match image width
+			margin: 0 auto; //center grid content within column
+		}
+	}
+	
+	.title-image {
+		display: table;
+		width: 100%;
+		height: @grid-title-image-height;
+		text-align: center;
+		background: @gray-light center center no-repeat;
+		
+		.title {
+			display: table-cell;
+			vertical-align: middle;
+		}
+	}
+	
+	.description {
+		margin-top: 1rem;
+	}
+	
+	.grid-row:first-child {
+		.grid-item:first-child {
+			@media (max-width: @screen-xs-max) {
+				margin-top: 0; //override top margin for first grid item (of the first row) only
+			}
+		}
+	}
+	
+}
+
+/*******************/

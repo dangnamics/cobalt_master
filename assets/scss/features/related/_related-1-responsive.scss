@@ -1,0 +1,58 @@
+section {
+    &.related {
+
+        .container {
+            width: 100%;
+
+            .row {
+                .mod {
+                    .inner {
+
+
+                        @media (max-width: $screen-xs-max) {
+                            padding-bottom: 41px;
+                            width: 90%;
+                            //max-height: 600px;
+                            height: 100%;
+                            overflow: hidden;
+
+                            h4, p, .read-more {
+                                //padding-left: 26px;
+                                //padding-right: 26px;
+                                height: auto;
+                            }
+
+                            p {
+                                margin-bottom: 1em;
+                            }
+
+                            &, .img {
+                                height: auto;
+                                max-width: 300px;
+                                margin: 0 auto;
+                            }
+                        }
+
+
+                        @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+                            width: 90%;
+                            //max-height: 160px;
+                            height: 100%;
+                            overflow: hidden;
+                        }
+                        /* Anything from tablet down will lose the nav menu have the large white Donate area */
+                        @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+                            width: 90%;
+                            //max-height: 160px;
+                            height: 100%;
+                            overflow: hidden;
+                        }
+                        /* Large desktop */
+                        @media (min-width: $screen-lg-min) {
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

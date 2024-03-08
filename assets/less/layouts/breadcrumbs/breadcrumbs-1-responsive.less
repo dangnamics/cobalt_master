@@ -1,0 +1,62 @@
+/* Landscape phones and down */
+@media (max-width: @screen-xs-max) {
+
+}
+
+/* Landscape phone to portrait tablet */
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+
+	.breadcrumbs {
+		&.breadcrumbs-1 {
+			.container, .container-fluid {
+				.inner {
+					padding-left:(@content-padding-md - (@grid-gutter-width / 2));
+					padding-right:(@content-padding-md - (@grid-gutter-width / 2));
+				}
+			}
+		}
+	}
+	.page-template-list-grid {
+		.breadcrumbs {
+			&.breadcrumbs-1 {
+				.container, .container-fluid {
+					.inner {
+						padding-left:(@grid-padding-md - (@grid-gutter-width / 2));
+						padding-right:(@grid-padding-md - (@grid-gutter-width / 2));
+					}
+				}
+			}
+		}
+	}
+}
+
+/* Large desktop */
+@media (min-width: @screen-lg-min) {
+	.breadcrumbs {
+		&.breadcrumbs-1 {
+			.container, .container-fluid {
+				.inner {
+					padding-left:(@content-padding-lg - (@grid-gutter-width / 2));
+					padding-right:(@content-padding-lg - (@grid-gutter-width / 2));
+				}
+			}
+		}
+	}
+	.page-template-list-grid {
+		.breadcrumbs {
+			&.breadcrumbs-1 {
+				.container, .container-fluid {
+					.inner {
+						padding-left:(@grid-padding-lg - (@grid-gutter-width / 2));
+						padding-right:(@grid-padding-lg - (@grid-gutter-width / 2));
+					}
+				}
+			}
+		}
+	}
+}

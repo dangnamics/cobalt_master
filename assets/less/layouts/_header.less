@@ -1,0 +1,24 @@
+header {
+	&.header {
+		&.header-1 {
+			padding-top:1em;
+			background-color:#FFF;
+			.home-logo {
+				img {
+					height:auto;
+				}
+			}
+			nav {
+				.navbar-toggle {
+					border-color:@brand-primary;
+					.icon-bar {
+						background-color:lighten(@brand-primary, 20%);
+					}
+				}
+			}
+		}
+	}
+}
+
+@import "_header-responsive";
+@import "../features/_offcanvas";

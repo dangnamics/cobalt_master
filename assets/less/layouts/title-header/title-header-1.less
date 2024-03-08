@@ -1,0 +1,23 @@
+
+.title-header {
+	&.title-header-1 {
+		.container, .container-fluid {
+			background-color:@brand-primary;
+			color:#fff;
+			.title {
+				text-transform:uppercase;
+				margin:0;
+			}
+			.description {
+				p {
+					margin:10px 0 0;
+					&:first-child {
+						margin:0;
+					}
+				}
+			}
+		}
+	}
+}
+
+@import "title-header-1-responsive";

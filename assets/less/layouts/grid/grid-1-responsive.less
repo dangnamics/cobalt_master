@@ -1,0 +1,116 @@
+/* Landscape phones and down */
+@media (max-width: @screen-xs-max) {
+
+	.grid {
+		&.grid-1 {
+			.container, .container-fluid {
+				.row {
+					&:first-child {
+						.grid-item {
+							&:first-child {
+								padding-top:0;
+							}
+						}
+					}
+					.grid-col-odd {
+						background-color:@gray-lighter;
+					}
+					.grid-col-even {
+						background-color:#FFF;
+					}
+				}
+			}
+		}
+	}
+}
+
+/* Landscape phone to portrait tablet */
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+
+
+	.grid {
+		&.grid-1 {
+			.container, .container-fluid {
+				.row {
+					&:first-child {
+						.grid-item {
+							padding-top:0;
+						}
+					}
+					&.grid-row-odd {
+						background-color:@gray-lighter;
+					}
+					&.grid-row-even {
+						background-color:#FFF;
+					}
+					.grid-item {
+						.inner {
+							padding-left:(@grid-padding-sm - (@grid-gutter-width / 2));
+							padding-right:(@grid-padding-sm - (@grid-gutter-width / 2));
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+
+	.grid {
+		&.grid-1 {
+			.container, .container-fluid {
+				.row {
+					&:first-child {
+						.grid-item {
+							padding-top:0;
+						}
+					}
+					&.grid-row-odd {
+						background-color:@gray-lighter;
+					}
+					&.grid-row-even {
+						background-color:#FFF;
+					}
+					.grid-item {
+						.inner {
+							padding-left:(@grid-padding-md - (@grid-gutter-width / 2));
+							padding-right:(@grid-padding-md - (@grid-gutter-width / 2));
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/* Large desktop */
+@media (min-width: @screen-lg-min) {
+
+	.grid {
+		&.grid-1 {
+			.container, .container-fluid {
+				.row {
+					&:first-child {
+						.grid-item {
+							padding-top:0;
+						}
+					}
+					&.grid-row-odd {
+						background-color:@gray-lighter;
+					}
+					&.grid-row-even {
+						background-color:#FFF;
+					}
+					.grid-item {
+						.inner {
+							padding-left:(@grid-padding-lg - (@grid-gutter-width / 2));
+							padding-right:(@grid-padding-lg - (@grid-gutter-width / 2));
+						}
+					}
+				}
+			}
+		}
+	}
+}

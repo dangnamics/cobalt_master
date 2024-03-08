@@ -1,0 +1,99 @@
+﻿//Page Hero
+//.page-template-list, .page-template-templates, .page-template-list-grid, .page-template-stories-list, .donate, .give-now {
+
+//Begin Container Adjustments
+.page.page-template-list, .search {
+    section {
+        &.newsfeed.newsfeed-1 {
+            font-family: $font-primary;
+
+            .container, .container-fluid {
+                width: 100%;
+                /* Landscape phones and down */
+                @media (max-width: $screen-xs-max) {
+                    padding-left: 0px;
+                    padding-right: 0px;
+
+                    .newsfeed {
+                        .newsfeed-item {
+                            .container-fluid, .container {
+                                width: 100%;
+
+                                .row {
+                                    margin-left: 0;
+                                    margin-right: 0;
+                                    padding-bottom: 13px;
+
+                                    .news-items-left {
+                                        float: none;
+                                        max-width: 100%;
+                                        width: auto;
+
+                                        img {
+                                            width: 100%;
+                                            max-width: 100%;
+                                            height: auto;
+                                        }
+                                    }
+
+                                    .newsfeed-information {
+                                        width: 100%;
+                                        padding: 20px;
+                                        margin-left: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                /* Landscape phone to portrait tablet */
+                @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+                    padding-left: 30px;
+                    padding-right: 30px;
+
+                    .newsfeed {
+                        .newsfeed-item {
+                            .container-fluid, .container {
+                                width: 100%;
+
+                                .news-items-left {
+                                    width: 45%;
+                                }
+
+                                .news-items-body {
+                                    //margin-left:0;
+                                }
+                            }
+                        }
+                    }
+                }
+                /* Portrait tablet to landscape and desktop */
+                @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+                    padding-left: 0px;
+                    padding-right: 0px;
+
+                    .newsfeed {
+                        .newsfeed-item {
+                            .container-fluid, .container {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+                /* Large desktop */
+                @media (min-width: $screen-lg-min) {
+                    padding-left: 0px;
+                    padding-right: 0px;
+
+                    .newsfeed {
+                        .newsfeed-item {
+                            .container-fluid, .container {
+                            }
+                        }
+                    }
+                }
+                //End Container
+            }
+        }
+    }
+}

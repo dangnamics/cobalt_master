@@ -1,0 +1,49 @@
+﻿/* Scss Name: Footer
+ * Discription: All default settings for footer
+ * Date: 01/01/2017
+ * Last Modified: 01/01/2017
+ * Notes : 01/01/2017
+ * 
+ */
+
+ //Footer Donate Button
+$footer-donate-btn-font-size:$donate-btn-font-size;
+$footer-donate-btn-transform:$donate-btn-text-transform;
+$footer-donate-btn-weight:$donate-btn-weight;
+$footer-donate-btn-height:51px;
+$footer-donate-btn-width:202px;
+
+//Footer Primary Navigation
+$footer-nav-size: 1.111rem;
+
+$footer-font-family:$font-primary;
+
+$footer-nav-color:#fff;
+$footer-hover-color:$footer-nav-color;
+$footer-decoration:none;
+$footer-hover-decoration:none;
+$footer-nav-weight:normal;
+
+//Footer Sub Menu Section
+$footer-subnav-color:#fff;
+
+$footer-subnav-decoration:none;
+$footer-subnav-hover-decoration:none;
+$footer-subnav-weight:normal;
+
+
+$footer-menu-size:$footer-nav-size;
+
+$footer-bg:#3B3B3B;
+$footer-font-color:#fff;
+$footer-link-color:#fff;
+$footer-link-decoration:none;
+$footer-hover-decoration:none;
+$footer-link-weight:normal;
+
+$footer-content-size:0.8333rem;
+
+$footer-h1:$font-h1;
+$footer-h2:$font-h2;
+$footer-h6:1.111rem;
+

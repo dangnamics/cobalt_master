@@ -1,0 +1,210 @@
+﻿$logo-tablet-height: 86px;
+
+// Tablet portrait and lower: we show the hamburger menu
+@media (max-width: $screen-sm-max) {
+    header {
+        &.header {
+            &.header-1 {
+                padding: 30px 0 26px 30px;
+                height: auto;
+
+                &.navbar-header {
+                    top: 22px;
+                }
+
+                padding-bottom: 33px;
+
+                .container, .container-fluid {
+                    width: 100%;
+                    padding: 0;
+                    position: relative;
+
+                    .home-logo {
+                        width: auto;
+                        margin-left: 0;
+
+                        & > a {
+                            display: block;
+                        }
+
+                        img {
+                            width: auto;
+                            display: block;
+                            margin: 0 auto;
+
+                            &.logo {
+                                margin-left: 0;
+                                max-height: $logo-tablet-height;
+                                position: relative;
+                            }
+                        }
+                    }
+
+                    .utility-bar {
+                        display: inline;
+                        margin-right: 99px;
+                        margin-top: 5px;
+
+                        .btn-donate {
+                            padding-left: 3px;
+                            padding-right: 3px;
+                            margin: 0;
+                            font-size: 23.08px;
+                            letter-spacing: 1.8px;
+                            font-weight: bold;
+                        }
+                    }
+
+                    .navbar-header {
+                        position: absolute;
+                        top: 0px; // Should total the top bar is 47px away from the top
+                        right: 0;
+
+                        .navbar-toggle {
+                            display: inline;
+                            margin-right: 5px;
+
+                            .icon-bar {
+                                height: 4px;
+                                width: 28px;
+                                background-color: $brand-primary;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    aside {
+        &.social-icons {
+            padding-left: 35px;
+            margin-top: 35px;
+
+            a {
+                font-size: 27px;
+                margin-right: 17px;
+            }
+        }
+    }
+}
+
+// Mobile
+@media (max-width: $screen-xs-max) {
+    .mobile-donate-btn {
+        display: none;
+    }
+
+    header {
+        &.header {
+            &.header-1 {
+                padding-top: 15px;
+                padding-bottom: 15px;
+
+                .container {
+                    position: relative;
+
+                    .home-logo {
+                        img {
+                            &.logo {
+                                width: auto;
+                                max-height: 55px;
+                            }
+                        }
+                    }
+
+                    .utility-bar {
+                        display: none;
+                    }
+
+                    .navbar-header {
+                        top: 0px;
+                        margin-right: 0;
+
+                        .navbar-toggle {
+                            margin-right: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+    .site-wrapper {
+        header {
+            &.header {
+                &.header-1 {
+                    .container, .container-fluid {
+                        width: 100%;
+
+                        .home-logo {
+                            //float:none;
+                            margin-left: 0;
+
+                            img {
+                                margin-top: 0;
+                                position: relative;
+                                width: 100%;
+                                height: auto;
+                            }
+                        }
+
+                        .utility-bar {
+                            margin-top: 11px;
+                            margin-right: 80px;
+                            max-width: 665px;
+
+                            ul {
+                                li {
+                                    nav {
+                                        ul#menu-utility-nav {
+                                            padding-left: 0;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        nav {
+                            &.navbar {
+                                .container, .container-fluid {
+                                    width: 100%;
+
+                                    .navbar-collapse {
+                                        padding: 0;
+
+                                        nav {
+                                            &.header-nav {
+                                                margin-left: 0;
+                                                width: 100%;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Large desktop */
+@media (min-width: $screen-lg-min) {
+
+    header {
+        &.header {
+            &.header-1 {
+                .container, .container-fluid {
+                    .utility-bar {
+                        margin-top: 11px;
+                    }
+                }
+            }
+        }
+    }
+}

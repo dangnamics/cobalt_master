@@ -1,0 +1,1064 @@
+[
+    {
+        "key": "group_5581b80b4bf92",
+        "title": "Home - Hero",
+        "fields": [
+            {
+                "key": "field_5580b94ba2ae3",
+                "label": "Donate button label",
+                "name": "donate-button-label",
+                "type": "text",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Donate Now",
+                "placeholder": "Donate Now",
+                "prepend": "",
+                "append": "",
+                "formatting": "html",
+                "maxlength": 40,
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_5580ba3aa2ae4",
+                "label": "Hero Image",
+                "name": "background-image-url",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "preview_size": "medium",
+                "library": "all",
+                "return_format": "url",
+                "min_width": 0,
+                "min_height": 0,
+                "min_size": 0,
+                "max_width": 0,
+                "max_height": 0,
+                "max_size": 0,
+                "mime_types": ""
+            },
+            {
+                "key": "field_5580ba84a2ae5",
+                "label": "Headline copy",
+                "name": "headline-copy",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "Headline",
+                "prepend": "",
+                "append": "",
+                "formatting": "html",
+                "maxlength": 100,
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_5580babca2ae6",
+                "label": "Headline sub copy",
+                "name": "headline-sub-copy",
+                "type": "textarea",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": 1000,
+                "rows": 2,
+                "new_lines": "br",
+                "readonly": 0,
+                "disabled": 0
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_template",
+                    "operator": "==",
+                    "value": "home.php"
+                }
+            ],
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "acf-options-home"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [
+            "permalink",
+            "the_content",
+            "excerpt",
+            "custom_fields",
+            "discussion",
+            "comments",
+            "revisions",
+            "slug",
+            "author",
+            "format",
+            "featured_image",
+            "categories"
+        ]
+    },
+    {
+        "key": "group_559e0e97319a6",
+        "title": "Home - Social Icons",
+        "fields": [
+            {
+                "key": "field_559e0ea628a7d",
+                "label": "Facebook URL",
+                "name": "social_facebook-url",
+                "type": "url",
+                "instructions": "Enter the URL for your organization's Facebook page.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": ""
+            },
+            {
+                "key": "field_559e0f1b28a7e",
+                "label": "Instagram URL",
+                "name": "social_instagram-url",
+                "type": "url",
+                "instructions": "Enter the URL for your organization's Instagram page.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": ""
+            },
+            {
+                "key": "field_559e0fa528a7f",
+                "label": "Twitter URL",
+                "name": "social_twitter-url",
+                "type": "url",
+                "instructions": "Enter the URL for your organization's Twitter feed.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": ""
+            },
+            {
+                "key": "field_559e0fd528a80",
+                "label": "Pinterest URL",
+                "name": "social_pinterest-url",
+                "type": "url",
+                "instructions": "Enter the URL for your organization's Pinterest page",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": ""
+            },
+            {
+                "key": "field_559e100528a81",
+                "label": "YouTube URL",
+                "name": "social_youtube-url",
+                "type": "url",
+                "instructions": "Enter the URL for your organization's YouTube page.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_template",
+                    "operator": "==",
+                    "value": "home.php"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": ""
+    },
+    {
+        "key": "group_55a00924893d1",
+        "title": "List Grid - Banner Settings",
+        "fields": [
+            {
+                "key": "field_55a0092497a49",
+                "label": "Hero Image",
+                "name": "background-image-url",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "preview_size": "medium",
+                "library": "all",
+                "return_format": "url",
+                "min_width": 0,
+                "min_height": 0,
+                "min_size": 0,
+                "max_width": 0,
+                "max_height": 0,
+                "max_size": 0,
+                "mime_types": ""
+            },
+            {
+                "key": "field_55a0092498219",
+                "label": "Headline sub copy",
+                "name": "headline-sub-copy",
+                "type": "textarea",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": 1000,
+                "rows": 2,
+                "new_lines": "br",
+                "readonly": 0,
+                "disabled": 0
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_template",
+                    "operator": "==",
+                    "value": "templates\/list-grid.php"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "acf_after_title",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [
+            "permalink",
+            "the_content",
+            "excerpt",
+            "custom_fields",
+            "discussion",
+            "comments",
+            "revisions",
+            "slug",
+            "author",
+            "format",
+            "featured_image",
+            "categories"
+        ]
+    },
+    {
+        "key": "group_55a27e0a942a3",
+        "title": "Page Setup",
+        "fields": [
+            {
+                "key": "field_55a27e0aa57ff",
+                "label": "Header Text",
+                "name": "page_header-text",
+                "type": "wysiwyg",
+                "instructions": "The block of text that appears next to the page title at the top of the page",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "tabs": "text",
+                "toolbar": "basic",
+                "media_upload": 0
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "page"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": ""
+    },
+    {
+        "key": "group_5585db0a912c8",
+        "title": "Site - Header",
+        "fields": [
+            {
+                "key": "field_5585db9ce68dc",
+                "label": "Logo",
+                "name": "header_logo",
+                "type": "image",
+                "instructions": "The site logo image that appears in the top corner of the page.",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": 200,
+                "min_height": 50,
+                "min_size": "",
+                "max_width": 500,
+                "max_height": 200,
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_5585dfd4db364",
+                "label": "Partner Login url",
+                "name": "header_partner_login_url",
+                "type": "url",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "acf-options-header"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": ""
+    },
+    {
+        "key": "group_55a33e1ac3d70",
+        "title": "Staff - Member Information",
+        "fields": [
+            {
+                "key": "field_55a33ec1a9755",
+                "label": "Title",
+                "name": "staff_title",
+                "type": "text",
+                "instructions": "The staff member's title",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": 100,
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_55a33f23a9756",
+                "label": "Group",
+                "name": "staff_group",
+                "type": "select",
+                "instructions": "The group that this staff member belongs to (i.e. Administration, Board of Directors, etc.)",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "Administration": "Administration",
+                    "Development, Sponsorship & Marketing, Volunteers": "Development, Sponsorship & Marketing, Volunteers",
+                    "Food Bank Programs": "Food Bank Programs",
+                    "Board of Directors": "Board of Directors"
+                },
+                "default_value": {
+                    "": ""
+                },
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "ajax": 0,
+                "placeholder": "",
+                "disabled": 0,
+                "readonly": 0
+            },
+            {
+                "key": "field_55a33e4ea9753",
+                "label": "Image",
+                "name": "staff_image",
+                "type": "image",
+                "instructions": "Staff Member's Image",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": 150,
+                "min_height": 150,
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "staff_member"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "acf_after_title",
+        "style": "default",
+        "label_placement": "left",
+        "instruction_placement": "label",
+        "hide_on_screen": [
+            "permalink",
+            "the_content",
+            "excerpt",
+            "custom_fields",
+            "discussion",
+            "comments",
+            "revisions",
+            "slug",
+            "author",
+            "format",
+            "page_attributes",
+            "featured_image",
+            "categories",
+            "tags",
+            "send-trackbacks"
+        ]
+    },
+    {
+        "key": "group_5581b80b6bf4a",
+        "title": "Home - Title Bar",
+        "fields": [
+            {
+                "key": "field_55818f7b8487d",
+                "label": "Title copy",
+                "name": "value-prop-copy",
+                "type": "text",
+                "instructions": "This is the title text that appears below the hero image area",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "formatting": "html",
+                "maxlength": 200,
+                "readonly": 0,
+                "disabled": 0
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_template",
+                    "operator": "==",
+                    "value": "home.php"
+                }
+            ],
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "acf-options-home"
+                }
+            ]
+        ],
+        "menu_order": 2,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": ""
+    },
+    {
+        "key": "group_5581bc1e24e92",
+        "title": "Home - Touts",
+        "fields": [
+            {
+                "key": "field_5581bc2afdb29",
+                "label": "Touts",
+                "name": "touts",
+                "type": "repeater",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "min": 3,
+                "max": "",
+                "layout": "table",
+                "button_label": "Add Tout",
+                "sub_fields": [
+                    {
+                        "key": "field_5581bc69fdb2a",
+                        "label": "Title",
+                        "name": "title",
+                        "type": "text",
+                        "instructions": "Tout title",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "Title",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": 70,
+                        "readonly": 0,
+                        "disabled": 0
+                    },
+                    {
+                        "key": "field_5581bc92fdb2b",
+                        "label": "Image",
+                        "name": "image",
+                        "type": "image",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "url",
+                        "preview_size": "thumbnail",
+                        "library": "all",
+                        "min_width": 340,
+                        "min_height": 190,
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    },
+                    {
+                        "key": "field_5581bd63fdb2c",
+                        "label": "Caption",
+                        "name": "caption",
+                        "type": "text",
+                        "instructions": "Caption text for below the image",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "Lorem ipsum dolet amet...",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": 250,
+                        "readonly": 0,
+                        "disabled": 0
+                    },
+                    {
+                        "key": "field_5581bdaafdb2d",
+                        "label": "Link text",
+                        "name": "link_text",
+                        "type": "text",
+                        "instructions": "Text for the link that appears below the image and caption",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "Read More",
+                        "prepend": "",
+                        "append": ">",
+                        "maxlength": 49,
+                        "readonly": 0,
+                        "disabled": 0
+                    },
+                    {
+                        "key": "field_5581bde4fdb2e",
+                        "label": "Link URL",
+                        "name": "link_url",
+                        "type": "url",
+                        "instructions": "Where do you want this tout to go when the visitor clicks on it?",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "http:\/\/www.example.com"
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_template",
+                    "operator": "==",
+                    "value": "home.php"
+                }
+            ],
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "acf-options-home"
+                }
+            ]
+        ],
+        "menu_order": 3,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": ""
+    },
+    {
+        "key": "group_558307b258ca6",
+        "title": "Home - Infographic",
+        "fields": [
+            {
+                "key": "field_55832d48a7720",
+                "label": "Title",
+                "name": "title",
+                "type": "text",
+                "instructions": "Title text that appears above the entire section",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": 100,
+                    "class": "infographics col-sm-6",
+                    "id": ""
+                },
+                "default_value": "Hunger by the Numbers",
+                "placeholder": "Title text...",
+                "prepend": "",
+                "append": "",
+                "maxlength": 150,
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_55832da3a7721",
+                "label": "Sub-title",
+                "name": "sub-title",
+                "type": "text",
+                "instructions": "The text that appears under the title",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "sub-title",
+                    "id": ""
+                },
+                "default_value": "One in four children in Nevada is hungry.  We're fighting that statistic with some of our own.",
+                "placeholder": "Sub-title text...",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_55832e06a7722",
+                "label": "Link",
+                "name": "link",
+                "type": "url",
+                "instructions": "The copy that appears on the link below the title",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "link",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": ""
+            },
+            {
+                "key": "field_558446ceac334",
+                "label": "List",
+                "name": "list",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "min": "",
+                "max": "",
+                "layout": "table",
+                "button_label": "Add Row",
+                "sub_fields": [
+                    {
+                        "key": "field_558446ddac335",
+                        "label": "Image",
+                        "name": "image",
+                        "type": "image",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "url",
+                        "preview_size": "thumbnail",
+                        "library": "all",
+                        "min_width": 100,
+                        "min_height": 100,
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    },
+                    {
+                        "key": "field_55844747ac336",
+                        "label": "Tout",
+                        "name": "caption",
+                        "type": "text",
+                        "instructions": "The text that appears in bold next to the image",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "Caption text...",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": 50,
+                        "readonly": 0,
+                        "disabled": 0
+                    },
+                    {
+                        "key": "field_55844783ac337",
+                        "label": "Sub Caption",
+                        "name": "sub-caption",
+                        "type": "text",
+                        "instructions": "The text that appears tiny under the caption",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "Caption sub-text...",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": 250,
+                        "readonly": 0,
+                        "disabled": 0
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_template",
+                    "operator": "==",
+                    "value": "home.php"
+                }
+            ]
+        ],
+        "menu_order": 4,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": ""
+    },
+    {
+        "key": "group_5584ae97e49f7",
+        "title": "Home - News Feed",
+        "fields": [
+            {
+                "key": "field_5584ae97f3e1c",
+                "label": "Title",
+                "name": "newsfeed_title",
+                "type": "text",
+                "instructions": "Title text that appears above the entire section",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": 100,
+                    "class": "infographics col-sm-6",
+                    "id": ""
+                },
+                "default_value": "Latest News",
+                "placeholder": "Title text...",
+                "prepend": "",
+                "append": "",
+                "maxlength": 150,
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_5584ae98005a0",
+                "label": "Description",
+                "name": "newsfeed_description",
+                "type": "text",
+                "instructions": "The text that appears under the title",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "sub-title",
+                    "id": ""
+                },
+                "default_value": "Stay informed with the latest from our blog.",
+                "placeholder": "Sub-title text...",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_5584d8b33b00f",
+                "label": "Articles",
+                "name": "newsfeed_articles",
+                "type": "relationship",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "post_type": [
+                    "post"
+                ],
+                "taxonomy": [],
+                "filters": [
+                    "search",
+                    "taxonomy"
+                ],
+                "elements": [
+                    "featured_image"
+                ],
+                "min": 1,
+                "max": 2,
+                "return_format": "object"
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_template",
+                    "operator": "==",
+                    "value": "home.php"
+                }
+            ]
+        ],
+        "menu_order": 4,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": ""
+    },
+    {
+        "key": "group_559efaa0ee476",
+        "title": "Parent Setup",
+        "fields": [
+            {
+                "key": "field_559efb5cedc4f",
+                "label": "Page Summary",
+                "name": "page_summary",
+                "type": "wysiwyg",
+                "instructions": "The summary text excerpt that appears beside the image on the parent page",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "tabs": "text",
+                "toolbar": "basic",
+                "media_upload": 0
+            },
+            {
+                "key": "field_559efab1edc4d",
+                "label": "Call to Action",
+                "name": "page_call-to-action",
+                "type": "text",
+                "instructions": "Enter the text on the link that leads you to this page from it's parent page, or clear the field to remove the link altogether.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Read More",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": 100,
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_55a27ec4988b1",
+                "label": "Show in Parent List?",
+                "name": "page_show-in-parent-list",
+                "type": "true_false",
+                "instructions": "Include this page in the parent page's list?",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 1
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "page"
+                },
+                {
+                    "param": "page_type",
+                    "operator": "==",
+                    "value": "child"
+                }
+            ]
+        ],
+        "menu_order": 24,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "left",
+        "instruction_placement": "label",
+        "hide_on_screen": [
+            "excerpt"
+        ]
+    }
+]

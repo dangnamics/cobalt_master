@@ -1,0 +1,17 @@
+﻿@media (max-width: $screen-xs-max) {
+    section {
+        &.title-header {
+            .container {
+                background: none;
+
+                .row {
+                    .column-title {
+                        h1 {
+                            font-size: 28px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

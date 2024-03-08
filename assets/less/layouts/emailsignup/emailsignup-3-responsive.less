@@ -1,0 +1,93 @@
+/* Landscape phones and down */
+@media (max-width: @screen-xs-max) {
+
+	section {
+		&.emailsignup {
+			&.emailsignup-3 {
+				.container, .container-fluid {
+					#om-post-action-footer {
+						#om-post-action-optin-email, #om-post-action-optin-submit {
+							margin:0;
+							width:100%;
+						}
+						#om-post-action-optin-email {
+							margin-bottom:.5em;
+						}
+					}
+					.social-icons-1 {
+						text-align:center;
+					}
+					
+				}
+			}
+		}
+	}
+}
+
+/* Landscape phone to portrait tablet */
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+
+	section {
+		&.emailsignup {
+			&.emailsignup-3 {
+				.container, .container-fluid {
+					.social-icons-1 {
+						text-align:center;
+					}
+					
+				}
+			}
+		}
+	}
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+
+	section {
+		&.emailsignup {
+			&.emailsignup-3 {
+				.container, .container-fluid {
+					.optin-monster-overlay {
+						#om-post-action-footer {
+							float:left;
+							#om-post-action-optin-email {
+								margin-left:30px;
+							}
+						}
+					}
+					.social-icons-1 {
+						bottom: 31px;
+						position: absolute;
+						right: 90px;
+					}
+				}
+			}
+		}
+	}
+}
+
+/* Large desktop */
+@media (min-width: @screen-lg-min) {
+	section {
+		&.emailsignup {
+			&.emailsignup-3 {
+				.container, .container-fluid {
+					.optin-monster-overlay {
+						#om-post-action-footer {
+							float:left;
+							#om-post-action-optin-email {
+								margin-left:130px;
+							}
+						}
+					}
+					.social-icons-1 {
+						bottom: 31px;
+						position: absolute;
+						right: 190px;
+					}
+				}
+			}
+		}
+	}
+}

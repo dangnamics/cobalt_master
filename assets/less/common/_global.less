@@ -1,0 +1,77 @@
+* {
+	outline:0!important;
+}
+
+
+.error-page {
+	&.error-page-1 {
+		.container, .container-fluid {
+			background-color:#FFF;
+		}
+	}
+}
+
+.hdr {
+	font-family:@font-family-hdr-bold;
+}
+
+strong, b {
+	font-family:@font-family-base-bold;
+	font-weight: normal;
+}
+
+em strong, strong em, b em, b em, b i, i b {
+	font-family:@font-family-base-italic;
+	font-weight: normal;
+}
+
+em {
+	font-family:open_sansitalic;
+	font-weight: normal;
+}
+
+// WP TIMYMC EDITOR
+#tinymce {
+	padding:15px 30px !important;
+	background-color:#fff;
+}
+
+// Fixing the desktop main-nav hover over
+.dropdown:hover ul.dropdown-menu {
+  display: block;
+  margin-top:0;
+}
+
+#gform_1 {
+	@gform-color:#b1c6db;
+	input, select, textarea {
+		margin:0 0 40px;
+		background-color:#e5ebef;
+		border:1px solid @gform-color;
+		outline:0;
+		@padding-c-form:10px;
+		padding-left:@padding-c-form;
+		padding-right:@padding-c-form;
+		::-webkit-input-placeholder,
+		:-moz-placeholder,
+		::-moz-placeholder,
+		:-ms-input-placeholder {  
+		   color: @gform-color;  
+		}
+	}
+	textarea {
+		margin-bottom:15px;
+	}
+	.gform_footer {
+		margin:0;
+		padding:0;
+		input {
+			background: #0099cc none repeat scroll 0 0;
+			border: 1px solid black;
+			color: white;
+			font-size: 18px;
+			padding: 10px 30px;
+			text-transform: uppercase;
+		}
+	}
+}

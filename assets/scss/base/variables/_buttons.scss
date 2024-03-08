@@ -1,0 +1,103 @@
+﻿/* Scss Name: Buttons
+ * Discription: All Button Variable Settings 
+ * Date: 01/01/2017
+ * Last Modified: 01/01/2017
+ * Notes : 01/01/2017
+ * 
+ */
+
+
+/************************************
+   Primary Donation Button
+*************************************/
+$donate-btn-font-size:1.333rem;
+$donate-btn-color:#fff;
+$donate-btn-bg:#D43239;
+$donate-btn-border:0px solid #fff;
+$donate-btn-radius: 3px;
+$donate-btn-weight:bold;
+$donate-btn-text-transform:uppercase;
+$donate-btn-text-style:normal;
+$donate-btn-align:center;
+$donate-btn-padding:.3333rem .6667rem;
+
+/************************************
+   Primary Donation Button hover
+*************************************/
+$donate-btn-color-hover:#fff;
+$donate-btn-bg-hover:#A20D15;
+$donate-btn-border-hover:0px solid #fff;
+
+
+/************************************
+  Alt Donation Button *Defaults to primary
+*************************************/
+$alt-donate-btn-font-size:$donate-btn-font-size;
+$alt-donate-btn-color:$donate-btn-color;
+$alt-donate-btn-bg:$donate-btn-bg;
+$alt-donate-btn-border:$donate-btn-border;
+$alt-donate-btn-radius: $donate-btn-radius;
+$alt-donate-btn-weight:$donate-btn-weight;
+$alt-donate-btn-text-transform:$donate-btn-text-transform;
+$alt-donate-btn-text-style:$donate-btn-text-style;
+$alt-donate-btn-align:$donate-btn-align;
+
+/************************************
+  Alt Donation Button hover *Defaults to primary
+*************************************/
+$alt-donate-btn-color-hover:$donate-btn-color-hover;
+$alt-donate-btn-bg-hover:$donate-btn-bg-hover;
+$alt-donate-btn-border-hover:$donate-btn-border-hover;
+
+/************************************
+   List Page Button
+*************************************/
+$list-btn: false;
+$grid:false; // is this a grid page
+$list-btn-font-size: 17px;
+$list-font-color:$brand-secondary;
+$list-btn-bg:$brand-primary;
+$list-btn-border:0px solid $brand-primary;
+$list-btn-radius: 5px;
+$list-btn-weight:bold;
+$list-btn-text-transform:uppercase;
+$list-btn-text-style:normal;
+$list-btn-align:center;
+$list-btn-line-height:1.5rem;
+$list-btn-letter-spacing:.75px;
+
+
+/************************************
+   Grid Page Button
+*************************************/
+$grid-btn: true; 
+$grid:true; //is this a grid page
+$grid-font-color:#fff;
+$grid-btn-font-size:23px;
+$grid-btn-bg:#f07848;
+$grid-btn-border:0px solid $brand-primary;
+$grid-btn-radius: 3px;
+$grid-btn-weight:bold;
+$grid-btn-align:center;
+$grid-btn-text-transform:uppercase;
+$grid-btn-text-style:normal;
+$grid-btn-line-height:1.5rem;
+$grid-btn-letter-spacing:1px;
+
+/************************************
+   Email Sign-up Button
+*************************************/
+
+$email-font-color:$brand-primary-font-color;
+$email-font-size:1.111rem;
+$email-btn-bg:#999;
+$email-btn-padding:0 1.667rem;
+$email-btn-border:0px solid $brand-primary;
+$email-btn-radius: 10px;
+$email-btn-weight:bold;
+$email-btn-text-transform:uppercase;
+$email-btn-text-style:normal;
+$email-btn-align:center;
+$email-btn-radius:5px;
+
+

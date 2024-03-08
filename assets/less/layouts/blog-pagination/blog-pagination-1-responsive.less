@@ -1,0 +1,47 @@
+/* ************************
+
+	Blog-pagination-1-responsive
+	
+************************ */
+
+/* Landscape phones and down */
+
+@media (max-width: @screen-xs-max) {
+	.blog-pagination {
+		.container {
+			.row {
+				position:relative;
+				width:100%;
+
+				.pagination-prev-col, .pagination-next-col{
+					width:100%;
+				}
+				.pagination-spacer-col {
+					display:none;
+				}
+			}
+		}
+	}
+
+}
+
+/* Landscape phone to portrait tablet */
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+	.blog-pagination {
+		.container {
+			.row {
+				width:100%;
+			}
+		}
+	}
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+
+}
+
+/* Large desktop */
+@media (min-width: @screen-lg-min) {
+
+}

@@ -1,0 +1,20 @@
+﻿//includes all scss files
+
+/************************/
+//Bootstrap import, load first
+@import "vendor/_bootstrap";
+
+//Base import 
+@import "base/_reset"; 
+@import "base/_colors"; 
+@import "base/_variables";
+@import "base/_mixins";
+@import "base/_fonts";
+@import "base/_global";
+
+//Component Import 
+@import "components/_wp-classes";
+@import "components/_buttons";
+
+//layouts and features
+@import "_bundled"; 

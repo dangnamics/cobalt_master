@@ -1,0 +1,13 @@
+﻿@media (max-width: $screen-sm-max) {
+    body {
+        &.single-post {
+            form {
+                p {
+                    input, button, select, textarea {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

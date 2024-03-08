@@ -1,0 +1,20 @@
+﻿section {
+	&.valueprop {
+        margin-top:50px;
+		&.valueprop-1 {
+			.container {
+				text-align:center;
+				background-color:$valueprop-bg;
+				color:#FFF;
+                h2{
+                    font-size:$h2;
+                    text-transform:uppercase;
+                }
+                p{
+                    color:$primary-p-color;
+                    font-size:20px;
+                }
+			}
+		}
+	}
+}

@@ -1,0 +1,47 @@
+/** TOUTS.LESS **/
+/* Author: Nick Downs */
+
+
+//Variables
+//Any values that are reused and/or customizable should be defined as variables. If they need to be accessible by other files, use [variables.less]
+
+
+
+
+/********************
+* General
+********************/
+
+.touts {
+	padding:  3rem 0;
+	background: @gray-lighter;
+
+	@media (max-width: @screen-xs-max) {
+		.tout {
+			//Center single column of touts on the page
+			max-width: 400px;
+			margin-left: auto;
+			margin-right: auto;
+			
+			+ .tout {
+				margin-top: 4rem; //Add space between touts
+			}
+		}
+	}
+	
+	@media (max-width: @screen-sm-max) {
+		.tout {
+			&:nth-child(3), &:nth-child(4) {
+				margin-top: 4rem;
+			}
+		}
+	}
+	
+	.tout {
+		.make-sm-column(6);
+		.make-md-column(3);
+	}
+
+}
+
+/*******************/

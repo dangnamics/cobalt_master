@@ -1,0 +1,24 @@
+﻿//Button Defaults
+
+button{
+
+    &.searchbox-submit{
+        background:none;
+        border:none;
+        color:#000;
+        font-size:20px; //matches ultilty nav size
+    }
+
+}
+
+//btn link class
+a{
+    &.btn-donate{
+        min-width:200px;
+        font-size:$donate-btn-font-size;
+        padding:$donate-btn-padding;
+        @include btns($donate-btn-color, $donate-btn-bg, $donate-btn-border, $donate-btn-radius, $donate-btn-align, $donate-btn-text-transform, $donate-btn-text-style,$donate-btn-weight,$donate-btn-color-hover, $donate-btn-bg-hover, $donate-btn-border-hover);
+
+
+    }
+}

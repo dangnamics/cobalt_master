@@ -1,0 +1,131 @@
+﻿
+header {
+    &.header {
+        padding-top: 34px;
+
+        &.header-1 {
+            .container, .container-fluid {
+                .clearfix{
+                    display:none;
+                }
+                .home-logo {
+                    float: left;
+                    margin-left: -15px;
+                }
+
+                .utility-bar {
+                    margin-right: -($grid-gutter-width / 2);
+                    $utility-bar-height: 30px;
+                    float: right;
+
+                    ul {
+                        &.container-utility-bar {
+                            li {
+                                &:nth-child(2) {
+                                    position: relative;
+                                }
+
+                                .search-icon-area {
+                                    height: 25px;
+                                    width: 25px;
+                                    position: absolute;
+                                    z-index: 99;
+                                    cursor: pointer;
+                                }
+                            }
+
+                            .search-container {
+                                position: relative;
+
+                                input {
+                                    // display:none;
+                                    border: #F0F0F0 1px solid;
+                                    margin-right: 0px;
+                                    max-width: 150px;
+                                    position: absolute;
+                                    top: 30px;
+                                    right: 5px;
+                                    border: solid 1px #686868;
+                                    border-radius: 3px;
+                                    padding-left: 3px;
+                                }
+
+                                i {
+                                    &.fa-search {
+                                        color: #535C6F;
+                                    }
+                                }
+                            }
+                        }
+
+                        li {
+                            float: left;
+                            margin: 0;
+                            padding: 0;
+                            list-style: none;
+                            margin-left: 50px;
+
+                            &:first-child {
+                                margin-left: 0;
+                            }
+
+                            &:last-child {
+                                margin-left: 27px;
+                            }
+
+                            .header-nav {
+                                #menu-utility-navigation {
+                                    margin: 0;
+                                    padding: 0;
+
+                                    li {
+                                        height: $utility-bar-height;
+                                        line-height: $utility-bar-height;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .navbar-toggle {
+                    margin-right: 23px;
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+.mobile-donate-btn {
+    text-align: center;
+    z-index: 9999;
+    position: relative;
+    //top: 112px;
+    //width: 100%;
+    display: none;
+    min-height: $donate-button-bar-height;
+
+    .inner {
+        padding: 11px 16px;
+
+        a {
+            background-color: $brand-secondary;
+            font-family: $font-primary;
+            font-weight: bold;
+            font-size: $mobile-donate-font-size;
+            letter-spacing: $mobile-donate-letter-spacing;
+            text-transform: uppercase;
+            width: 100%;
+            min-height: $donate-button-bar-height;
+            border-radius: 3px;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+    }
+}
+
+
+@import "_header-1-responsive";

@@ -1,0 +1,109 @@
+
+/* Landscape phones and down */
+@media (max-width: @screen-xs-max) {
+
+	.hero {
+		&.hero-1 {
+			.row {
+				.content, .hero-img {
+					float:none !important;
+				}
+				.content {
+					.inner {
+						padding:2em;
+					}
+				}
+			}
+		}
+	}
+}
+
+/* Landscape phone to portrait tablet */
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+
+	.hero {
+		&.hero-1 {
+			.row {
+				.content, .hero-img {
+					float:none !important;
+				}
+				.content {
+					.inner {
+						padding:2em;
+					}
+				}
+			}
+		}
+	}
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+
+	.hero {
+		&.hero-1 {
+			.container, container-fluid {
+				.content {
+					.inner {
+						padding-top:5em;
+					}
+				}
+			}
+		}
+	}
+	.page {
+		.hero {
+			&.hero-1 {
+				.container, container-fluid {
+					.content {
+						.inner {
+							@padding-inner: 50px;
+							padding-left:@padding-inner;
+							padding-right:@padding-inner;
+							.hdr {
+								font-size:ceil(@font-size-h1 * 1);
+								margin-bottom:0;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/* Large desktop */
+@media (min-width: @screen-lg-min) {
+
+	.hero {
+		&.hero-1 {
+			.container, container-fluid {
+				.content {
+					.inner {
+						padding-top:5em;
+					}
+				}
+			}
+		}
+	}
+	.page {
+		.hero {
+			&.hero-1 {
+				.container, container-fluid {
+					.content {
+						.inner {
+							@padding-inner: 40px;
+							padding-left:@padding-inner;
+							padding-right:@padding-inner;
+							.hdr {
+								font-size:ceil(@font-size-h1 * 1.5);
+								text-transform:uppercase;
+								margin-bottom:0;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

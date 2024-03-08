@@ -1,0 +1,23 @@
+﻿/* Scss Name: Forms
+ * Discription: Defaults for forms and email-signup
+ * Date: 01/01/2017
+ * Last Modified: 01/01/2017
+ * Notes : 01/01/2017
+ * 
+ */
+
+
+
+$email-signup-bg:$brand-primary; //background image or color
+$email-font-color:#fff;
+$email-font-transform:uppercase;
+$email-h4-size:2rem;
+$email-h5-size:1.111rem;
+$email-signup-radius:3px;
+
+$email-signup-btn-bg:#f07848;
+$email-signup-btn-font-color:#fff;
+
+$forms-label-weight:normal;
+$forms-label-font-size: 15px;
+$forms-second-label-font-size:$forms-label-font-size;

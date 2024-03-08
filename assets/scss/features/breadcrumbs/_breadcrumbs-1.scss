@@ -1,0 +1,32 @@
+﻿section{
+    &.breadcrumbs{
+        background:$breadcrumb-bg;
+        .container{
+            max-width:1170px;
+            width:100%;
+            padding:0 60px;
+            margin-left:0 auto;
+            .inner{
+            }
+            p{
+                margin-bottom:0;
+                font-size:$font-breadcrumbs;
+                line-height:27px;
+                span{
+                     
+                }
+            }
+            a{
+                color:$brand-primary;                 
+            }
+            span{
+                &.breadcrumb_last{
+                    text-decoration:underline;
+                }
+            }
+        }
+       
+    }
+}
+
+@import "_breadcrumbs-responsive.scss";

@@ -1,0 +1,134 @@
+﻿/************************************
+    Bootstrap default overrides here
+    Note: Change the default settings here
+*************************************/
+
+$font-headline-primary:  "Gotham-Book_gdi", sans-serif;
+$font-headline-secondary:  "Gotham-Bold_gdi", sans-serif;
+$font-headline-third:  "Gotham-Medium_gdi", sans-serif;
+
+$font-family-sans-serif:  "Gotham-Book_gdi", Arial, Helvetica, sans-serif !default;
+$font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
+$font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
+$font-family-base:        $font-family-sans-serif !default;
+
+$font-size-base:          14px !default;
+$font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~18px
+$font-size-small:         ceil(($font-size-base * 0.85)) !default; // ~12px
+
+$font-size-h1:            floor(($font-size-base * 2.6)) !default; // ~36px
+$font-size-h2:            floor(($font-size-base * 2.15)) !default; // ~30px
+$font-size-h3:            ceil(($font-size-base * 1.7)) !default; // ~24px
+$font-size-h4:            ceil(($font-size-base * 1.25)) !default; // ~18px
+$font-size-h5:            $font-size-base !default;
+$font-size-h6:            ceil(($font-size-base * 0.85)) !default; // ~12px
+/************************************
+   eof  Bootstrap default overrides
+*************************************/
+
+
+/************************************
+   Font Defaults
+*************************************/
+
+@mixin font-regular (){
+	//font-family: $font-family-base;
+	font-weight:400;
+}
+@mixin font-medium (){
+	//font-family: $font-family-medium;
+	font-weight:600;
+}
+@mixin font-bold (){
+	//font-family:$font-family-bold;
+	font-weight:700;
+}
+
+/************************************
+   EOF Font Defaults
+*************************************/
+
+
+/************************************
+   BREADCRUMB
+*************************************/
+
+$bread-crumb-bg:$gray-light; 
+
+/************************************
+   EOF BREADCRUMB
+*************************************/
+
+/************************************
+   HERO
+*************************************/
+//Home Hero height
+$home-hero-height:550px;
+
+//page Hero Height
+$page-hero-height:400px;
+
+/************************************
+   EOF HERO
+*************************************/
+
+/************************************
+  Touts-1
+*************************************/
+
+$touts-bg:none;
+$h3:26px;
+
+/************************************
+   EOF Touts-1
+*************************************/
+
+
+/************************************
+   Main Navigation
+*************************************/
+
+$bread-crumb-bg:$gray-light; 
+
+/************************************
+   EOF Main Navigation
+*************************************/
+
+
+/************************************
+  Value Prop-1
+*************************************/
+
+$valueprop-bg:#fff;
+$h2:54px;
+
+/************************************
+   EOF Value Prop-1
+*************************************/
+
+
+
+/************************************
+  Email Signup
+*************************************/
+
+$h4:54px;
+
+/************************************
+   EOF Value Prop-1
+*************************************/
+
+
+
+/************************************
+   Variable Includes
+*************************************/
+@import "variables/_defaults.scss";
+@import "variables/_primary-nav.scss";
+@import "variables/_content.scss";
+@import "variables/_buttons.scss";
+@import "variables/_footer.scss";
+@import "variables/_list-page.scss";
+@import "variables/_grid-page.scss";
+@import "variables/_mobile-nav.scss";
+@import "variables/_forms.scss";

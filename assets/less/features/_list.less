@@ -1,0 +1,62 @@
+/** LIST.LESS **/
+/* Author: Nick Downs */
+
+
+//Variables
+//Any values that are reused and/or customizable should be defined as variables. If they need to be accessible by other files, use [variables.less]
+
+
+
+/********************
+* General
+********************/
+
+.list {
+	
+	.list-row {
+		padding-left: 0;
+		padding-right: 0;
+		
+		@media (min-width: @screen-sm-min) {
+			padding-top: 3rem; //padding between rows
+			padding-bottom: 3rem; //padding between rows
+		}
+		
+		&:nth-child(odd) {
+			@media (min-width: @screen-sm-min) {
+				background:@gray-lighter; //background for alternating rows
+			}
+		}
+	}
+	
+	.list-item {
+		@media (max-width: @screen-xs-max) {
+			margin-top: 3rem; //vertical spacing between items when stacked
+		}
+		
+		.image-container {
+			float: right;
+			
+			@media (max-width: @screen-xs-max) {
+				float: none;
+			}
+		}
+		
+		.title {
+			@media (min-width: @screen-sm-min) {
+				margin-top: 0;
+			}
+		}
+	}
+	
+	.list-row:first-child {
+		.list-item:first-child {
+			@media (max-width: @screen-xs-max) {
+				margin-top: 0; //override top margin for first grid item (of the first row) only
+			}
+		}
+	}
+	
+}
+
+/*******************/

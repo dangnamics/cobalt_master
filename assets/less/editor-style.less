@@ -1,0 +1,32 @@
+// SECTIONS
+section {
+	.container, container-fluid {
+		@padding-section:2em;
+		padding-top:@padding-section;
+		padding-bottom:@padding-section;
+		.mod {
+			.hdr {
+				text-align:center;
+				color:@brand-primary;
+				margin:0 0 1em 0;
+			}
+		}
+	}
+}
+
+// BUTTONS : CUSTOM
+a, button {
+	&.btn {
+		&.btn-donate {
+			background-color: @btn-donate-bg-color;
+			color: #fff !important;
+			border-color: @btn-donate-bg-color;
+			&:hover {
+				background-color: darken(@btn-donate-bg-color, 15%);
+				border-color: darken(@btn-donate-bg-color, 15%);
+			}
+		}
+	}
+}
+
+@import "main";

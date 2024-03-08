@@ -1,0 +1,239 @@
+﻿@import '../../base/_mixins.scss';
+
+
+/* Landscape phones and down */
+@media (max-width: $screen-xs-max) {
+
+    .touts {
+        &.touts-1 {
+            .container {
+                width: 100%;
+                margin: 0;
+                background: none;
+                padding: 47px 20px 54px 25px;
+
+                .container {
+                    padding: 0;
+                }
+
+                .mod {
+                    margin-bottom: 2em;
+                }
+
+                .row {
+                    padding: 0;
+                    // Header and sub-header
+                    &.touts-hdr-row {
+                        margin-top: 0;
+                        padding: 21px 0 44px;
+                        max-width: 400px;
+                        background-color: rgba(255,255,255,.8);
+
+                        .hdr-row {
+                            .hdr {
+                                font-size: 28px;
+                                line-height: 38px;
+                            }
+
+                            p {
+                                font-size: 17px;
+                                line-height: 27px;
+
+                                &:last-child {
+                                    margin-bottom: 0;
+                                }
+                            }
+                        }
+                    }
+                    // Tout items
+                    &.touts-items-row {
+                        padding-bottom: 0;
+
+                        .touts {
+                            margin: 0 auto;
+                            max-width: 100%;
+
+                            &:nth-of-type(odd) {
+                                margin-right: auto;
+                            }
+
+                            .hdr-container {
+                                .hdr {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    height: auto;
+                                    padding: 12px 0;
+
+                                    a {
+                                        font-size: 22px;
+                                        line-height: normal;
+                                        letter-spacing: 1.23px;
+                                    }
+                                }
+                            }
+
+                            .caption-container {
+                                height: auto;
+                                margin-bottom: 40px;
+                                padding: 20px 12px 17px;
+
+                                p, .read-more {
+                                    font-size: 17px;
+                                    line-height: 27px;
+                                }
+                            }
+
+                            &:last-of-type {
+                                .caption-container {
+                                    margin-bottom: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Landscape phone to portrait tablet */
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+
+    .touts {
+        &.touts-1 {
+            .container {
+                width: 100%;
+                padding: 70px 40px 101px;
+
+                .container {
+                    margin: 0;
+                    padding: 0;
+                    width: 100%;
+
+                    .mod {
+                        margin-bottom: 2em;
+                    }
+
+                    .row {
+                        padding: 0 36px;
+
+                        &:first-child {
+                            padding-top: 31px;
+                        }
+
+                        &:last-child {
+                            padding-bottom: 41px;
+                        }
+
+                        .touts {
+                            min-width: 275px;
+                            max-width: 400px;
+                            width: 46.7%;
+
+                            p {
+                                line-height: 34px;
+                            }
+
+                            .caption-container {
+                                padding-left: 22px;
+                                padding-right: 22px;
+                                height: auto;
+                            }
+                        }
+
+                        .hdr-container {
+                            .hdr {
+                                height: auto;
+                                padding: 13px 10px;
+                                display: flex;
+    align-items: center;
+    justify-content: center;
+                            }
+                        }
+
+                        h2 {
+                            font-size: 36px;
+                            margin-bottom: .3em;
+                        }
+
+                        p {
+                            font-size: 24px;
+                            line-height: 36px;
+
+                            &:last-child {
+                                margin-bottom: 51px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+
+    .touts {
+        &.touts-1 {
+            .container {
+                .mod {
+                    margin-bottom: 2em;
+                }
+
+                width: 100%;
+
+                .container {
+                    width: 1024px;
+                    max-width: 100%;
+
+                    .row {
+                        .hdr-container {
+                            .hdr {
+                                height: auto;
+                                padding: 20px 10px;
+                            }
+                        }
+
+                        .touts {
+                            min-width: 275px;
+                            max-width: 400px;
+                            width: 46.7%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Large desktop */
+@media (min-width: $screen-lg-min) {
+
+    .touts {
+        &.touts-1 {
+            .container {
+                .mod {
+                    margin-bottom: 2em;
+                }
+
+                .row {
+                    .touts {
+                        p {
+                            padding: 0;
+                        }
+
+                        h3 {
+                            a {
+                                width: 100%;
+                                display: block;
+                                @include centerVertically();
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

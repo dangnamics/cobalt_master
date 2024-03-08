@@ -1,0 +1,113 @@
+section {
+    &.related {
+        .container {
+            max-width: 1170px;
+            width: 100%;
+            padding-bottom: 52px;
+            padding-top: 33px;
+            padding-left: 0px;
+            padding-right: 0px;
+
+            a {
+                font-size: 18px;
+                color: $brand-secondary;
+                font-weight: bold;
+                text-transform: uppercase;
+                margin-top: 20px;
+
+                &.read-more {
+                    display: block;
+                    margin-top: 20px;
+                }
+
+                .fa-angle-right, .fa-angle-left {
+                    vertical-align: middle;
+                    margin-top: -5px;
+                    padding-left: 3px;
+                    font-size: 17px;
+                }
+            }
+
+            h3 {
+                font-weight: bold;
+                font-size: 24px;
+                color: $brand-secondary;
+                margin-top: 0px;
+                margin-bottom: 23px;
+                text-transform: none;
+            }
+
+            h4 {
+                font-weight: bold;
+                font-size: 18px;
+                color: $brand-primary;
+                letter-spacing: 0px;
+                line-height: 24px;
+                margin-top: 18px;
+                margin-bottom: 7px;
+
+                a {
+                    font-size: 18px;
+                    color: #3B3B3B;
+                    letter-spacing: 0;
+                    font-weight:bold;
+                    line-height: 26px;
+                    text-transform: capitalize;
+                }
+            }
+
+            p {
+                font-size: 16px;
+                color: #3B3B3B;
+                letter-spacing: 0px;
+                line-height: 26px;
+                margin-bottom: 0;
+                height: auto;
+            }
+
+            p:nth-of-type(1) {
+                //display: none;
+            }
+
+            .border-multiply-wrapper {
+                border: none;
+            }
+
+            .row {
+                margin: 0;
+                border-top: solid 1px $brand-primary-accent;
+                padding: 50px 0px 0px 30px;
+
+                .col-md-4 {
+                    padding-right: 0px;
+                    padding-left: 0;
+
+                    &:first-child {
+                        padding-left: 0;
+                    }
+
+                    &:last-child {
+                        margin-right: 0px;
+                    }
+                }
+
+                .mod {
+                    .inner {
+                        width: 90%;
+                        //max-height: 220px;
+                        height: 100%;
+                        overflow: hidden;
+
+                        a {
+                            img {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@import "_related-1-responsive";

@@ -1,0 +1,89 @@
+﻿/* Scss Name: Content
+ * Discription: All styles for content pages, styles here do not apply anywhere else beside wysiwyg editor and content boxes
+ * Date: 01/01/2017
+ * Last Modified: 01/01/2017
+ * Notes : 01/01/2017
+ * 
+ */
+
+/**************************************
+  Links and Hovers
+***************************************/
+$primary-link-color:$brand-primary;
+$primary-link-color-hover:$brand-primary;
+$pirmary-link-decoration:none;
+$primary-link-decoration-hover:underline;
+
+/**************************************
+  Paragraph Styles
+***************************************/
+
+$p-content-font-size:$font-primary-size;
+$p-content-color: $primary-p-color;
+$p-content-lineheight:28px;
+$p-content-font-family:$font-primary;
+
+/**************************************
+  Headline Styles
+***************************************/
+
+$h1-content-font-size:$font-primary-size;
+$h1-content-color: $primary-p-color;
+$h1-content-lineheight:$font-primary-height ;
+$h1-content-font-family:$font-primary;
+
+$h2-content-font-size:$font-primary-size;
+$h2-content-color: $primary-p-color;
+$h2-content-lineheight:$font-primary-height;
+$h2-content-font-family:$font-primary;
+
+$h3-content-font-size:$font-primary-size;
+$h3-content-color: $primary-p-color;
+$h3-content-lineheight:$font-primary-height;
+$h3-content-font-family:$font-primary;
+
+$h4-content-font-size:$font-primary-size;
+$h4-content-color: $primary-p-color;
+$h4-content-lineheight:$font-primary-height;
+$h4-content-font-family:$font-primary;
+
+$h4-content-font-size:$font-primary-size;
+$h4-content-color: $primary-p-color;
+$h4-content-lineheight:$font-primary-height;
+$h4-content-font-family:$font-primary;
+
+$h4-content-font-size:$font-primary-size;
+$h4-content-color: $primary-p-color;
+$h4-content-lineheight:$font-primary-height;
+$h4-content-font-family:$font-primary;
+
+/**************************************
+  list Styles
+***************************************/
+$ul-margin:0 0 0.5556rem 0;
+$ul-padding:0 0 0 0;
+$ul-style: disc;
+$ul-color:$primary-p-color;
+
+$li-margin:0 0 0.5556rem 0;
+$li-padding:0 0 0 0;
+$li-style: disc;
+$li-color:$primary-p-color;
+$li-indent:20px;
+
+/**************************************
+  Image 
+***************************************/
+
+$img-alignleft-margin:36px 36px 36px 0;
+$img-alignleft-padding:0 0 0 0;
+
+$img-alignright-margin:36px 0px 36px 36px;
+$img-alignright-padding:0 0 0 0;
+
+$img-aligncenter-margin:36px auto;
+$img-aligncenter-padding:0 0 0 0;
+
+
+$img-alignnone-margin:0 auto 50px;
+$img-alignnone-padding:0 0 0 0;

@@ -1,0 +1,56 @@
+
+header {
+	&.header {
+		&.header-1 {
+			.container, .container-fluid {
+				.home-logo {
+					float:left;
+				}
+				.utility-bar {
+					margin-right:-(@grid-gutter-width / 2);
+					@utility-bar-height:30px;
+					float:right;
+					ul {
+						li {
+							float:left;
+							margin:0;
+							padding:0;
+							list-style:none;
+							margin-left:1em;
+							&:first-child {
+								margin-left:0;
+							}
+							.header-nav {
+								#menu-utility-navigation {
+									margin:0;
+									padding:0;
+									li {
+										height:@utility-bar-height;
+										line-height:@utility-bar-height;
+									}
+								}
+							}
+                            .search-icon-area{
+                                    height: 25px;
+                                    width: 25px;
+                                    position: absolute;
+                                    z-index: 99;
+                            }
+
+						}
+                        .search-container{
+                            z-index:0;
+                            input{
+                                display:none;
+                            }
+                                
+                        }
+					}
+				}
+			}
+		}
+	}
+}
+
+
+@import "header-1-responsive";

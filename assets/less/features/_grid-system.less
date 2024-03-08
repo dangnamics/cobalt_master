@@ -1,0 +1,76 @@
+/** GRID-SYSTEM.LESS **/
+/* Author: Nick Downs */
+
+
+//Variables
+//Any values that are reused and/or customizable should be defined as variables. If they need to be accessible by other files, use [variables.less]
+
+
+
+/********************
+* GENERAL
+********************/
+
+
+.grid-system {
+	
+	.row {
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+	}
+	
+	div:not(.container) {
+		line-height: 50px;
+		background: rgba(0,0,0,0.15);
+		background-clip: content-box;
+		color: white;
+	}
+	
+	div:after {
+		margin-left: 0.5rem;
+	}
+	
+	
+	div[class*="-9"]:after {
+		content: " .col-xs-9";
+	}
+	div[class*="-8"]:after {
+		content: " .col-xs-8";
+	}
+	div[class*="-7"]:after {
+		content: " .col-xs-7";
+	}
+	div[class*="-6"]:after {
+		content: " .col-xs-6";
+	}
+	div[class*="-5"]:after {
+		content: " .col-xs-5";
+	}
+	div[class*="-4"]:after {
+		content: " .col-xs-4";
+	}
+	div[class*="-3"]:after {
+		content: " .col-sm-3";
+	}
+	div[class*="-2"]:after {
+		content: " .col-md-2";
+	}
+	div[class*="-1"]:after {
+		content: " .col-lg-1";
+		font-size: 0.6rem;
+	}
+	div[class*="-12"]:after {
+		content: " .col-xs-12";
+		font-size: 1rem;
+	}
+	div[class*="-11"]:after {
+		content: " .col-xs-11";
+	}
+	div[class*="-10"]:after {
+		content: " .col-xs-10";
+	}
+	
+}
+
+
+/*******************/

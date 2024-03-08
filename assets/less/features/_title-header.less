@@ -1,0 +1,45 @@
+/** TITLE-HEADER.LESS **/
+/* Author: Nick Downs */
+
+
+//Variables
+//Any values that are reused and/or customizable should be defined as variables. If they need to be accessible by other files, use [variables.less]
+
+
+
+/********************
+* GENERAL
+********************/
+
+.title-header {
+	background: @brand-primary center center no-repeat;
+	width: 100%;
+	padding: 3rem 0;
+	font-size: 0; //inline-block spacing fix
+	
+	.title {
+		.make-sm-column(4);
+		.make-md-column(3);
+		.make-md-column-offset(1);
+	}
+	
+	.description {
+		.make-sm-column(8);
+		.make-md-column(7);
+	}
+	
+	.description, .title {
+		display: inline-block;
+		float: none;
+		vertical-align: middle;
+		color: white;
+
+		@media (min-width: @screen-sm-min) {
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+	}
+}
+
+
+/*******************/

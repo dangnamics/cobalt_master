@@ -1,0 +1,44 @@
+section {
+	&.emailsignup {
+		&.emailsignup-3 {
+			.container, .container-fluid {
+				padding-top:1em;
+				padding-bottom:1em;
+				background-color:@gray-lighter;
+				position:relative;
+				#om-post-action-header {
+					#om-post-action-optin-title {
+						margin-bottom:0;
+						font-weight:bold;
+					}
+				}
+				#om-post-action-footer {
+					#om-post-action-optin-email, #om-post-action-optin-submit {
+						padding:6px 10px 2px;
+					}
+					#om-post-action-optin-submit {
+						&:hover { 
+							background-color:@brand-primary;
+						}
+					}
+				}
+				#om-post-action-optin-title {
+					span {
+						color:@brand-primary;
+					}
+				}
+				.social-icons-1 {
+					a {
+						font-size:(@font-size-large + 10);
+						margin-left:20px;
+						&:first-child {
+							margin-left:0;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@import "emailsignup-3-responsive";

@@ -1,0 +1,331 @@
+﻿
+/************************************
+   MIXINS
+   Notes: Place to put functions and custom calculations
+*************************************/
+
+@mixin donate-styles($bg-color: #555, $btn-color: #fff) {
+    border-radius: 7px;
+    font-size: 20px; //@font-size-large;
+    padding: 0 28px;
+    line-height: 54px;
+    letter-spacing: 0.17em; //@letter-spacing-univ;
+    color: $btn-color;
+    background-color: $bg-color;
+    display: inline-block !important;
+
+    &:hover {
+        background-color: lighten($bg-color, 10%);
+        color: #FFF;
+    }
+}
+
+/***************************
+    * Buttons
+
+****************************/
+@mixin btn-hover($font-color: #fff, $btn-bg: #333, $btn-border: 0px solid #fff) {
+    color: $font-color ;
+    background: $btn-bg ;
+    border: $btn-border ;
+}
+
+@mixin btns($font-color: #fff, $btn-bg: #999, $btn-border: 0px, $btn-radius: 7px, $btn-align: center, $text-transform: uppercase, $text-style: normal, $font-weight: bold,$font-color-hover: #fff, $btn-bg-hover: #333, $btn-border-hover: 0px solid #fff) {
+    color: $font-color;
+    border-radius: $btn-radius;
+    border: $btn-border;
+    background-color: $btn-bg;
+    text-align: $btn-align;
+    font-weight: $font-weight;
+    text-transform: $text-transform;
+    font-style: $text-style;
+
+    &:hover, &:focus, &.focus {
+        @include btn-hover($font-color-hover, $btn-bg-hover, $btn-border-hover);
+    }
+}
+
+
+
+
+
+/***************************
+    * List/Grid Page links
+****************************/
+
+@mixin list-grid-link-styles ($btn-type: true, $grid: false, $font-color: #fff, $btn-bg: #999, $btn-border: solid 1px #999, $btn-radius: 7px, $btn-weight:bold, $btn-align: center , $btn-text-transform:uppercase, $btn-text-style:normal) {
+    @if $btn-type == true {
+        display: inline-block;
+        background: $btn-bg;
+        border: $btn-border;
+        border-radius: $btn-radius;
+        color: $font-color; // if its a button use button font color
+        
+    }
+    @else {
+        display: inline;
+        color:$font-color; // use the background color as the font color
+    }
+    text-align: $btn-align;
+    text-transform:$btn-text-transform;
+    font-style:$btn-text-style;
+    font-weight:$btn-weight;
+
+}
+
+
+
+/********************
+    * Offcanvas
+********************/
+
+/***  Defaults to right  ***/
+
+@mixin offcanvas($offcanvas-side: right) {
+    @if ($offcanvas-side == 'right') {
+        .navbar-toggle {
+            right: 0;
+            float: right;
+            margin-right: 0;
+            padding-right: 0;
+        }
+
+        .sidebar-offcanvas {
+            float: right;
+            /*Changed to percentage of the screen for all formats*/
+            /*@media  (max-width: $screen-sm-max) {
+                    right:-$off-canvas-nav-size;
+		            width: $off-canvas-nav-size;
+                }  */
+            right: -$off-canvas-nav-size-tablet-landscape;
+            width: $off-canvas-nav-size-tablet-landscape;
+
+            @media (max-width: $screen-md-min) {
+                right: -$off-canvas-nav-size-tablet;
+                width: $off-canvas-nav-size-tablet;
+            } 
+
+            @media (max-width: $screen-sm-min) {
+                right: -$off-canvas-nav-size-tablet;
+                width: $off-canvas-nav-size-tablet;
+            }
+
+            @media (max-width: $screen-sm-min) {
+                right: -$off-canvas-nav-size-tablet;
+                width: $off-canvas-nav-size-tablet;
+            }
+
+            @media (max-width: $screen-xs-min) {
+                right: -$off-canvas-nav-size-mobile;
+                width: $off-canvas-nav-size-mobile;
+            }
+
+            //between mobile landscape and mobile phone
+            
+            @media (min-width: $screen-landscap-min) and (max-width: $screen-landscap-max) {
+                right: -$off-canvas-nav-size-mobile;
+                width: $off-canvas-nav-size-mobile;
+            }
+            /*
+	            @media (max-width: $screen-md-min) {
+                    right:-$offcanvas-size-sm;
+		            width: $offcanvas-size-sm;
+	            }
+	            @media (max-width: $screen-sm-min) {
+                    right:-$offcanvas-size-sm;
+		            width: $offcanvas-size-sm;
+	            }
+	            @media (max-width: $screen-xs-min) {
+                    right:-$offcanvas-size-xs;
+                    width: $offcanvas-size-xs;
+	            }*/
+        }
+
+        .offcanvas-open {
+            .site-wrapper {
+                right: $off-canvas-nav-size-tablet;
+                left: -$off-canvas-nav-size-tablet;
+                overflow: hidden;
+                @media (max-width: $screen-md-max) {
+                    right: $off-canvas-nav-size-tablet;
+                    left: -$off-canvas-nav-size-tablet-landscape;
+                    overflow: hidden;
+                }
+
+                @media (max-width: $screen-sm-max) {
+                    right: $off-canvas-nav-size-tablet;
+                    left: -$off-canvas-nav-size-tablet;
+                    overflow: hidden;
+                }
+
+                @media (max-width: $screen-xs-max) {
+                    right: $off-canvas-nav-size-mobile;
+                    left: -$off-canvas-nav-size-mobile;
+                    overflow: hidden;
+                }
+            }
+            /*
+                .site-wrapper {
+                    @media (max-width: $screen-md-min) {
+                        right: ($offcanvas-size-sm);
+                        left: -($offcanvas-size-sm);
+	                }
+                    @media (max-width: $screen-sm-min) {
+                        right: ($offcanvas-size-sm);
+                        left: -($offcanvas-size-sm);
+	                }
+	                @media (max-width: $screen-xs-min) {
+                        right: ($offcanvas-size-xs);
+                        left: -($offcanvas-size-xs);
+	                }
+                }*/
+            .navbar-collapse {
+                margin-right: 0;
+                right: 0;
+            }
+        }
+    }
+    @else {
+        .navbar-toggle {
+            left: 0;
+            float: left;
+            margin-left: 0;
+            padding-left: 0;
+        }
+
+        .sidebar-offcanvas {
+            float: left;
+            left: -$offcanvas-size-sm;
+            width: $offcanvas-size-sm;
+
+            @media (max-width: $screen-md-min) {
+                left: -$offcanvas-size-sm;
+                width: $offcanvas-size-sm;
+            }
+
+            @media (max-width: $screen-sm-min) {
+                left: -$offcanvas-size-sm;
+                width: $offcanvas-size-sm;
+            }
+
+            @media (max-width: $screen-xs-min) {
+                left: -$offcanvas-size-xs;
+                width: $offcanvas-size-xs;
+            }
+        }
+
+        .offcanvas-open {
+            .site-wrapper {
+                right: -($offcanvas-size-sm);
+                left: ($offcanvas-size-sm);
+
+                @media (max-width: $screen-md-min) {
+                    right: -($offcanvas-size-sm);
+                    left: ($offcanvas-size-sm);
+                }
+
+                @media (max-width: $screen-sm-min) {
+                    right: -($offcanvas-size-sm);
+                    left: ($offcanvas-size-sm);
+                }
+
+                @media (max-width: $screen-xs-min) {
+                    right: -($offcanvas-size-xs);
+                    left: ($offcanvas-size-xs);
+                }
+            }
+
+            .navbar-collapse {
+                margin-left: 0;
+                left: 0;
+            }
+        }
+    }
+}
+/************************************
+    EOF Offcanvas
+*************************************/
+
+@mixin ease-in($delay, $duration) {
+    transition: ease-in $duration;
+    -moz-transition: ease-in $duration;
+    -webkit-transition: ease-in $duration;
+    -ms-transition: ease-in;
+    transition-delay: $delay;
+    -moz-transition-delay: $delay;
+    -ms-transition-delay: $delay;
+    -webkit-transition-delay: $delay;
+}
+
+/************************************
+    Font includes
+*************************************/
+
+@mixin fontFace($family,$src,$style: normal,$weight: normal) {
+    @font-face {
+        font-family: $family;
+        src: url('#{$src}.eot'); // IE9 compat
+        src: url('#{$src}.eot?#iefix') format('embedded-opentype'), // IE8 and below
+        url('#{$src}.woff') format('woff'), // standards
+        url('#{$src}.ttf') format('truetype'), // Safari, Android, iOS
+        url('#{$src}.svg##{$family}') format('svg'); // legacy iOS
+        font-style: $style;
+        font-weight: $weight;
+    }
+}
+
+/************************************
+   EOF Font includes
+*************************************/
+
+/************************************
+    Gradients
+*************************************/
+
+// Background Gradient: Left to Right 2 color
+@mixin bg-gradient-l2r($start-color, $end-color, $percent-end-A, $percent-start-B, $percent-start-A: 0%, $percent-end-B: 100%) {
+    background-color: $start-color;
+    background: $start-color;
+    background: -moz-linear-gradient(left, $start-color $percent-start-A, $start-color $percent-end-A, $end-color $percent-start-B, $end-color $percent-end-B);
+    background: -webkit-gradient(left top, right top, color-stop($percent-start-A, $start-color), color-stop($percent-end-A, $start-color), color-stop($percent-start-B,$end-color), color-stop($percent-end-B, $end-color));
+    background: -webkit-linear-gradient(left, $start-color $percent-start-A, $start-color $percent-end-A, $end-color $percent-start-B, $end-color $percent-end-B);
+    background: -o-linear-gradient(left,$start-color $percent-start-A, $start-color $percent-end-A, $end-color $percent-start-B, $end-color $percent-end-B);
+    background: -ms-linear-gradient(left, $start-color $percent-start-A, $start-color $percent-end-A, $end-color $percent-start-B, $end-color $percent-end-B);
+    background: linear-gradient(to right, $start-color $percent-start-A, $start-color $percent-end-A, $end-color $percent-start-B,$end-color $percent-end-B);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$start-color}', endColorstr='#{$end-color}', GradientType=1 );
+}
+
+
+/************************************
+    EOF Gradients
+*************************************/
+/************************************
+    Placement
+*************************************/
+@mixin centerVertically() {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+
+@mixin centerHorizontally() {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+}
+
+@mixin centerFully() {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+}
+/************************************
+    EOF Placement
+*************************************/

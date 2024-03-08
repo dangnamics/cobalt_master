@@ -1,0 +1,148 @@
+﻿/* Scss Name: Defaults
+ * Discription: All root default settings
+ * Date: 01/01/2017
+ * Last Modified: 01/01/2017
+ * Notes : 01/01/2017
+ * 
+ */
+
+/**************************************
+   Brand Colors *Alt defaults to primary
+***************************************/
+$brand-primary:#15561A;
+$brand-primary-font-color:#15561A; //used when brand-primary is the bg
+$brand-primary-alt:$brand-primary; 
+
+$brand-secondary:#D43239;
+$brand-secondary-font-color:#fff;  //used when brand-primary is the bg
+$brand-seconary-alt:$brand-secondary;
+
+$brand-primary-accent:#FCC427;
+$brand-secondary-accent:#FCC427;
+$brand-accent-alt:#3B3B3B;
+
+$body-bg:#fff;
+
+/*
+* Link colors
+*/
+$link-color:$brand-secondary;
+$link-hover-color:$brand-secondary;
+$link-decoration:none;
+$link-hover-decoration:none;
+
+/*
+
+/**************************************
+   Primary Fonts and size
+***************************************/
+
+$font-primary:  'Gotham-Book_gdi', sans-serif;
+$font-secondary: $font-primary; // This changes the primary navigation
+
+$primary-p-color:#4A4A4A;
+$primary-alt-p-color:#3B3B3B;
+
+$font-primary-size: 15px;
+$font-primary-height: 21px;  //line-height
+
+$font-breadcrumbs:14px;
+
+
+
+
+/**************************************
+  Headline defaults only pretains to non-content
+***************************************/
+
+//base off of standard 18px base font
+$font-h1:2.222rem; //40px *all Hero headline areas
+$font-h2:2.222rem;  //36px *all feature headlines, list and grid headlines
+$font-h3:2.333rem; //42px
+$font-h4:1.444rem; //26px *subscribe, email signup
+$font-h5:1.333rem; //24px
+$font-h6: 1.222rem; //22px
+
+$font-h1-transform:uppercase;
+$font-h2-transform:none;
+$font-h3-transform:none;
+$font-h4-transform:none;
+$font-h5-transform:none;
+$font-h6-transform:none;
+
+$font-h1-color:$primary-alt-p-color;
+$font-h2-color:$primary-alt-p-color;
+$font-h3-color:$primary-alt-p-color;
+$font-h4-color:$primary-alt-p-color;
+$font-h5-color:$primary-alt-p-color;
+$font-h6-color:$primary-alt-p-color;
+
+$font-h1-color-hover:$primary-alt-p-color;
+$font-h2-color-hover:$primary-alt-p-color;
+$font-h3-color-hover:$primary-alt-p-color;
+$font-h4-color-hover:$primary-alt-p-color;
+$font-h5-color-hover:$primary-alt-p-color;
+$font-h6-color-hover:$primary-alt-p-color;
+
+$p-primary:$font-primary-size;
+
+/**************************************
+  Title/Hero Section Margin
+***************************************/
+$h1-title-margin: 1.111rem 0 .5556rem;
+$h1-title-padding:0.6667rem 0 1.333rem;
+
+
+/**************************************
+  Accents Colors, Background, Breaks
+***************************************/
+
+$accent-colors:$brand-primary-accent;
+$accent-margin:1.111rem 0 1.111rem 0;
+$accent-border:0.05556rem solid $accent-colors;
+
+
+/*
+* Breadcrumb Colors
+*/
+$breadcrumb-bg:#EAC331;
+$breadcrumb-font-size:14px;
+
+/**************************************
+  Gravity Forms 
+***************************************/
+$gform-color:#b1c6db;
+
+
+/**************************************
+   Screen Sizes
+***************************************/
+
+$screen-xs:                  480px !default;
+$screen-xs-min:              $screen-xs !default;
+$screen-phone:               $screen-xs-min !default;
+
+$screen-landscap-min:        415px !default;
+$screen-landscap-max:        736px !default;
+
+$screen-sm:                  768px !default;
+$screen-sm-min:              $screen-sm !default;
+$screen-tablet:              $screen-sm-min !default;
+
+
+$screen-md:                  992px !default;
+$screen-md-min:              $screen-md !default;
+$screen-desktop:             $screen-md-min !default;
+
+$screen-lg:                  1200px !default;
+$screen-lg-min:              $screen-lg !default;
+$screen-lg-desktop:          $screen-lg-min !default;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max:              ($screen-sm-min - 1) !default;
+$screen-sm-max:              ($screen-md-min - 1) !default;
+$screen-md-max:              ($screen-lg-min - 1) !default;
+$screen-lg-max:              1600px !default;
+
+
+

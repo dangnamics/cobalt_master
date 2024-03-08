@@ -1,0 +1,198 @@
+/** OFFCANVAS.LESS **/
+/* Author: Nick Downs */
+
+
+//Variables
+//Any values that are reused and/or customizable should be defined as variables. If they need to be accessible by other files, use [variables.less]
+@navbar-toggle-padding: 10px + @navbar-padding-horizontal;
+@window-absolute-min:320px;
+@navbar-toggle-area: (@navbar-toggle-width + @navbar-toggle-padding);
+@offcanvas-size-xs: @window-absolute-min - (@navbar-toggle-area);
+@offcanvas-size-sm: @screen-xs-min - (@navbar-toggle-area);
+@offcanvas-transition: all 0.25s ease-out;
+@offcanvas-side: right;
+
+
+
+/********************
+* General
+********************/
+
+//Since this is a mobile nav, we'll restrict everything to tablets and below
+@media (max-width: @screen-sm-max) {
+	
+    .navbar-toggle {
+	    transition: @offcanvas-transition;
+	    margin-left: (@grid-gutter-width / 2); //variables.less
+	    margin-right: (@grid-gutter-width / 2); //variables.less
+
+	    &:before { //Increase clickable area on button by 30px
+		    @clickable-area: 30px;
+		    text-indent:-9999px;
+		    left: -(@clickable-area);
+		    content:".";
+		    right: -(@clickable-area);
+		    bottom: -(@clickable-area);
+		    top: -(@clickable-area);
+		    position:absolute;
+		    opacity:0;
+		    z-index:9999;
+	    }
+    }
+
+    .navbar-header {
+	    position:relative; // (SM)
+    }
+
+    .container > .sidebar-offcanvas { //Bootstrap default margin fix
+	    margin-left:0;
+	    margin-right:0;
+    }
+
+    .sidebar-offcanvas {
+	    overflow-x: hidden;
+	    overflow-y: scroll;
+	    background: @body-bg;
+	    border:0;
+	    height:100%;
+    }
+    /*******************/
+
+
+
+    /********************
+    * Offcanvas
+    ********************/
+
+    /***  Defaults  ***/
+
+    #offcanvas {
+        .get-side(@offcanvas-side) when (@offcanvas-side = right)
+        {
+            .navbar-toggle {
+                right:0;
+                float:right;
+                margin-right:0;
+                padding-right:0;
+            }
+            .sidebar-offcanvas {
+                float:right;
+                
+	            @media (max-width: @screen-md-min) {
+                    right:-@offcanvas-size-sm;
+		            width: @offcanvas-size-sm;
+	            }
+	            @media (max-width: @screen-sm-min) {
+                    right:-@offcanvas-size-sm;
+		            width: @offcanvas-size-sm;
+	            }
+	            @media (max-width: @screen-xs-min) {
+                    right:-@offcanvas-size-xs;
+                    width: @offcanvas-size-xs;
+	            }
+            }
+            .offcanvas-open
+            {
+                .site-wrapper {
+                    @media (max-width: @screen-md-min) {
+                        right: (@offcanvas-size-sm);
+                        left: -(@offcanvas-size-sm);
+	                }
+                    @media (max-width: @screen-sm-min) {
+                        right: (@offcanvas-size-sm);
+                        left: -(@offcanvas-size-sm);
+	                }
+	                @media (max-width: @screen-xs-min) {
+                        right: (@offcanvas-size-xs);
+                        left: -(@offcanvas-size-xs);
+	                }
+                }
+		        .navbar-collapse {
+			        margin-right:0;
+                    right:0;
+		        }
+            }
+        }
+        .get-side(@offcanvas-side) when (@offcanvas-side = left)
+        {
+            .navbar-toggle {
+                left:0;
+                float:left;
+                margin-left:0;
+                padding-left:0;
+            }
+
+            .sidebar-offcanvas {
+                float:left;
+                
+	            @media (max-width: @screen-sm-min) {
+                    left:-@offcanvas-size-sm;
+		            width: @offcanvas-size-sm;
+	            }
+	            @media (max-width: @screen-xs-min) {
+                    left:-@offcanvas-size-xs;
+		            width: @offcanvas-size-xs;
+	            }
+            }
+            .offcanvas-open
+            {
+                .site-wrapper {
+                    @media (max-width: @screen-sm-min) {
+                        right: -(@offcanvas-size-sm);
+                        left: (@offcanvas-size-sm);
+	                }
+	                @media (max-width: @screen-xs-min) {
+                        right: -(@offcanvas-size-xs);
+                        left: (@offcanvas-size-xs);
+	                }
+                }
+		        .navbar-collapse {
+			        margin-left:0;
+                    left:0;
+		        }
+            }
+        }
+    }
+
+    .site-wrapper {
+	    position:relative;
+	    left:0;
+        //float:left;
+	    transition: @offcanvas-transition;
+    }
+
+    #offcanvas.get-side(@offcanvas-side);
+
+    .sidebar-offcanvas {
+	    position:fixed;
+	    transition: @offcanvas-transition;
+    }
+    .navbar-collapse-left {
+	    left: (-@offcanvas-size-xs);
+    }
+    .navbar-collapse-right {
+	    right: (-@offcanvas-size-xs);
+    }
+
+
+    @media (min-width: @screen-sm-min) {
+        .site-wrapper {
+            //width:@container-tablet;
+            float:none;
+        }
+    }
+
+    /*----------*/
+
+
+    /***  Offcanvas Open-state  ***/
+
+    // When offcanvas menu is toggled:
+    body.offcanvas-open {
+	    overflow: hidden;
+    }
+
+/*----------*/
+
+} // end @media
+

@@ -1,0 +1,656 @@
+﻿@media (max-width: $screen-xs-max) {
+    section {
+        &.donation {
+            height: auto;
+
+            .container {
+                width: 100%;
+                padding: 28px 22px 55px;
+
+                .row {
+                    margin-left: 0px;
+                    margin-right: 0px;
+                    text-align: center;
+
+                    &.donation-widget {
+                        h2 {
+                            font-size: 36px;
+                            font-weight: bold;
+                            color: #252525;
+                            text-align: center;
+                            margin-top: 0;
+                            text-transform: none;
+                        }
+
+                        p {
+                            font-size: 18px;
+                            line-height: 30px;
+                            margin-bottom: 20px;
+                        }
+                    }
+
+                    &.donation-widget-amount {
+                        span {
+
+                            &.donation-widget {
+                                margin-right: 16px;
+                                margin-left: 16px;
+                                display: inline-block;
+                                margin-bottom: 18px;
+
+                                &:nth-child(even) {
+                                    margin-right: 0;
+                                }
+
+                                &:nth-child(odd) {
+                                    margin-left: 0;
+                                }
+                            }
+
+                            &:first-child {
+                                margin-left: 0;
+                            }
+
+                            &.amt-other {
+                                margin-right: 0;
+                                margin-left: 0;
+                                display: block;
+                                width: 100%;
+                            }
+
+                            a {
+                                &.donation-widget {
+                                    display: inline-flex;
+                                    width: 119px;
+                                    height: 50px;
+                                    background: #FFFFFF;
+                                    border-radius: 3px;
+                                    font-size: 24px;
+                                    align-items: center;
+                                    justify-content: center;
+
+                                    input {
+                                        width: 75%;
+                                        border: none;
+                                        background: #fff;
+                                        margin-left: 4px;
+                                        padding-left: 5px;
+                                        border-radius: 3px;
+                                        color: $brand-primary;
+                                    }
+
+                                    &.on-atm {
+                                        background: $brand-primary;
+                                        color: #fff;
+                                    }
+                                }
+
+                                &:hover {
+                                    background: $brand-primary;
+                                    color: #fff;
+                                    cursor: pointer;
+                                    text-decoration: none;
+                                }
+                            }
+                        }
+
+                        a {
+                            &.donate-btn-widget {
+                                background: $donate-btn-bg;
+                                border-radius: 3px;
+                                width: 200px;
+                                height: 50px;
+                                display: inline-flex;
+                                align-items: center;
+                                justify-content: center;
+                                color: #fff;
+                                font-size: 24px;
+                                font-weight: bold;
+
+                                &:hover {
+                                    text-decoration: none;
+                                    background: $donate-btn-bg-hover;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    body {
+        &:not(.home) {
+            section {
+                &.donation {
+                    height: auto;
+
+                    .container {
+                        width: 100%;
+                        padding: 28px 22px 55px;
+
+                        .row {
+                            margin-left: 0px;
+                            margin-right: 0px;
+                            text-align: center;
+
+                            &.donation-widget {
+                                h2 {
+                                    font-size: 36px;
+                                    font-weight: bold;
+                                    color: #252525;
+                                    text-align: center;
+                                    margin-top: 0;
+                                    text-transform: none;
+                                }
+
+                                p {
+                                    font-size: 18px;
+                                    line-height: 30px;
+                                    margin-bottom: 20px;
+                                }
+                            }
+
+                            &.donation-widget-amount {
+                                span {
+
+                                    &.donation-widget {
+                                        margin-right: 16px;
+                                        margin-left: 16px;
+                                        display: inline-block;
+                                        margin-bottom: 18px;
+
+                                        &:nth-child(even) {
+                                            margin-right: 0;
+                                        }
+
+                                        &:nth-child(odd) {
+                                            margin-left: 0;
+                                        }
+                                    }
+
+                                    &:first-child {
+                                        margin-left: 0;
+                                    }
+
+                                    &.amt-other {
+                                        margin-right: 0;
+                                        display: inline-block;
+                                        width: 100%;
+                                    }
+
+                                    a {
+                                        &.donation-widget {
+                                            display: inline-flex;
+                                            width: 119px;
+                                            height: 50px;
+                                            background: #FFFFFF;
+                                            border-radius: 3px;
+                                            font-size: 24px;
+                                            align-items: center;
+                                            justify-content: center;
+
+                                            input {
+                                                width: 75%;
+                                                border: none;
+                                                background: #fff;
+                                                margin-left: 4px;
+                                                padding-left: 5px;
+                                                border-radius: 3px;
+                                                color: $brand-secondary;
+                                            }
+
+                                            &.on-atm {
+                                                background: $brand-secondary;
+                                                color: #fff;
+                                            }
+                                        }
+
+                                        &:hover {
+                                            background: $brand-primary;
+                                            color: #fff;
+                                            cursor: pointer;
+                                            text-decoration: none;
+                                        }
+                                    }
+                                }
+
+                                a {
+                                    &.donate-btn-widget {
+                                        background: $brand-secondary;
+                                        border-radius: 3px;
+                                        width: 200px;
+                                        height: 50px;
+                                        display: inline-flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        font-size: 24px;
+                                        font-weight: bold;
+
+                                        &:hover {
+                                            text-decoration: none;
+                                            background: lighten( $brand-secondary, 20%);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &.home {
+            section {
+                &.donation {
+                    height: auto;
+
+                    .container {
+                        width: 100%;
+                        padding: 28px 22px 55px;
+
+                        .row {
+                            margin-left: 0px;
+                            margin-right: 0px;
+                            text-align: center;
+
+                            &.donation-widget {
+                                h2 {
+                                    font-size: 36px;
+                                    font-weight: bold;
+                                    color: #252525;
+                                    text-align: center;
+                                    margin-top: 0;
+                                    text-transform: none;
+                                }
+
+                                p {
+                                    font-size: 18px;
+                                    line-height: 30px;
+                                    margin-bottom: 20px;
+                                }
+                            }
+
+                            &.donation-widget-amount {
+                                span {
+
+                                    &.donation-widget {
+                                        margin-right: 16px;
+                                        margin-left: 16px;
+                                        display: inline-block;
+                                        margin-bottom: 18px;
+
+                                        &:nth-child(even) {
+                                            margin-right: 0;
+                                        }
+
+                                        &:nth-child(odd) {
+                                            margin-left: 0;
+                                        }
+                                    }
+
+                                    &:first-child {
+                                        margin-left: 0;
+                                    }
+
+                                    &.amt-other {
+                                        margin-right: 0;
+                                        display: inline-block;
+                                        width: 100%;
+                                    }
+
+                                    a {
+                                        &.donation-widget {
+                                            display: inline-flex;
+                                            width: 119px;
+                                            height: 50px;
+                                            background: #FFFFFF;
+                                            border-radius: 3px;
+                                            font-size: 24px;
+                                            align-items: center;
+                                            justify-content: center;
+
+                                            input {
+                                                width: 75%;
+                                                border: none;
+                                                background: #fff;
+                                                margin-left: 4px;
+                                                padding-left: 5px;
+                                                border-radius: 3px;
+                                                color: $brand-secondary;
+                                            }
+
+                                            &.on-atm {
+                                                background: $brand-secondary;
+                                                color: #fff;
+                                            }
+                                        }
+
+                                        &:hover {
+                                            background: $brand-primary;
+                                            color: #fff;
+                                            cursor: pointer;
+                                            text-decoration: none;
+                                        }
+                                    }
+                                }
+
+                                a {
+                                    &.donate-btn-widget {
+                                        background: $brand-secondary;
+                                        border-radius: 3px;
+                                        width: 200px;
+                                        height: 50px;
+                                        display: inline-flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        color: #fff;
+                                        font-size: 24px;
+                                        font-weight: bold;
+
+                                        &:hover {
+                                            text-decoration: none;
+                                            background: lighten( $brand-secondary, 20%);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 480px) and (max-width: 736px) {
+    section {
+        &.donation {
+            height: auto;
+
+            .container {
+                width: 100%;
+                padding: 28px 22px 55px !important;
+
+                .row {
+                    margin-left: 0px;
+                    margin-right: 0px;
+                    text-align: center;
+
+                    &.donation-widget {
+                        h2 {
+                            font-size: 36px;
+                            font-weight: bold;
+                            color: #252525;
+                            text-align: center;
+                            margin-top: 0;
+                            text-transform: none;
+                        }
+
+                        p {
+                            font-size: 18px;
+                            line-height: 30px;
+                            margin-bottom: 20px;
+                        }
+                    }
+
+                    &.donation-widget-amount {
+                        span {
+
+                            &.donation-widget {
+                                margin-right: 16px !important;
+                                margin-left: 16px !important;
+                                display: inline-block;
+                                margin-bottom: 18px;
+
+                                &:nth-child(even) {
+                                    margin-right: 0;
+                                }
+
+                                &:nth-child(odd) {
+                                    margin-left: 0;
+                                }
+                            }
+
+                            &:first-child {
+                                margin-left: 0;
+                            }
+
+                            &.amt-other {
+                                margin-left: auto !important;
+                                margin-right: auto !important;
+                                display: inline;
+                               
+                            }
+
+                            a {
+                                &.donation-widget {
+                                    display: inline-flex;
+                                    width: 119px;
+                                    height: 50px;
+                                    background: #FFFFFF;
+                                    border-radius: 3px;
+                                    font-size: 24px;
+                                    align-items: center;
+                                    justify-content: center;
+
+                                    input {
+                                        width: 75%;
+                                        border: none;
+                                        background: #fff;
+                                        margin-left: 4px;
+                                        padding-left: 5px;
+                                        border-radius: 3px;
+                                        color: $brand-secondary;
+                                    }
+
+                                    &.on-atm {
+                                        background: $brand-secondary;
+                                        color: #fff;
+                                    }
+                                }
+
+                                &:hover {
+                                    background: $brand-secondary;
+                                    color: #fff;
+                                    cursor: pointer;
+                                    text-decoration: none;
+                                }
+                            }
+                        }
+
+                        a {
+                            &.donate-btn-widget {
+                                background: $brand-secondary;
+                                border-radius: 3px;
+                                width: 200px;
+                                height: 50px;
+                                display: inline-flex;
+                                align-items: center;
+                                justify-content: center;
+                                color: #fff;
+                                font-size: 24px;
+                                font-weight: bold;
+
+                                &:hover {
+                                    text-decoration: none;
+                                    background: lighten($brand-secondary, 20%);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+
+    .page, .search {
+        section {
+            &.valueprop-1 {
+                display: none;
+            }
+
+            &.donation {
+                .container {
+                    width: 100%;
+                    padding: 28px 22px 55px;
+
+                    .row {
+                        margin-left: 0px;
+                        margin-right: 0px;
+                        text-align: center;
+
+                        &.donation-widget {
+                            h2 {
+                                font-size: 36px;
+                                font-weight: bold;
+                                color: #252525;
+                                text-align: center;
+                                margin-top: 0;
+                                text-transform: none;
+                            }
+
+                            p {
+                                font-size: 18px;
+                                line-height: 30px;
+                                margin-bottom: 20px;
+                            }
+                        }
+
+                        &.donation-widget-amount {
+                            span {
+                                margin-right: 28px;
+                                display: inline-block;
+                                margin-bottom: 18px;
+
+                                &.amt-other {
+                                    margin-right: 0px;
+                                }
+
+                                a {
+                                    &.donation-widget {
+                                        display: inline-flex;
+                                        width: 119px;
+                                        height: 50px;
+                                        background: #FFFFFF;
+                                        border-radius: 3px;
+                                        font-size: 24px;
+                                        align-items: center;
+                                        justify-content: center;
+
+                                        input {
+                                            width: 75%;
+                                            border: none;
+                                            background: #fff;
+                                            margin-left: 4px;
+                                            padding-left: 5px;
+                                            border-radius: 3px;
+                                            color: $brand-secondary;
+                                        }
+
+                                        &.on-atm {
+                                            background: $brand-secondary;
+                                            color: #fff;
+                                        }
+                                    }
+
+                                    &:hover {
+                                        background: $brand-secondary;
+                                        color: #fff;
+                                        cursor: pointer;
+                                        text-decoration: none;
+                                    }
+                                }
+                            }
+
+                            a {
+                                &.donate-btn-widget {
+                                    background: $brand-secondary;
+                                    border-radius: 3px;
+                                    width: 200px;
+                                    height: 50px;
+                                    display: inline-flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    color: #fff;
+                                    font-size: 24px;
+                                    font-weight: bold;
+                                    margin-top: 22px;
+
+                                    &:hover {
+                                        text-decoration: none;
+                                        background: lighten($brand-secondary,20%);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        body {
+            &:not(.home) {
+                section {
+                    &.donation {
+                        display: block;
+
+                        .container {
+                            width: 100%;
+                            padding: 53px 22px 55px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/* Portrait tablet to landscape and desktop */
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+
+    .page, .search {
+        section {
+            &.valueprop-1 {
+                display: none; 
+            }
+        }
+    }
+
+    section {
+
+        &.donation {
+            display: block;
+
+            .container {
+                width: 100%;
+                padding: 53px 22px 55px;
+
+                .row {
+                    .donation-widget-amount {
+
+
+                        a {
+                            &.donate-btn-widget {
+                                margin-top: 22px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/* Large desktop */
+@media (min-width: $screen-lg-min) {
+    section {
+        &.donation {
+            height: auto;
+
+            .container {
+            }
+        }
+    }
+}

@@ -1,0 +1,65 @@
+/*****************************************************************
+**
+** Bootstrap Default Variables (../vendor/bootstrap/less/variables)
+** -------------------------
+** Customized for Cobalt
+** -------------------------
+**
+******************************************************************/
+/* ************************
+
+	Blog Pagination
+	
+************************ */
+.blog-pagination {
+  margin-bottom: 80px;
+}
+.blog-pagination .container {
+  position: relative;
+}
+.blog-pagination .container .row {
+  position: absolute;
+  bottom: 0;
+  width: 66.66666667%;
+}
+.blog-pagination .container .row a {
+  text-transform: uppercase;
+  font-family: 'robotoregular', Helvetica, Arial, sans-serif;
+  font-weight: 600;
+}
+.blog-pagination .container .row .pagination-prev-col {
+  width: 33.33333333%;
+}
+.blog-pagination .container .row .pagination-next-col {
+  width: 33.33333333%;
+}
+.blog-pagination .container .row .pagination-spacer-col {
+  width: 33.33333333%;
+}
+/* ************************
+
+	Blog-pagination-1-responsive
+	
+************************ */
+/* Landscape phones and down */
+@media (max-width: 767px) {
+  .blog-pagination .container .row {
+    position: relative;
+    width: 100%;
+  }
+  .blog-pagination .container .row .pagination-prev-col,
+  .blog-pagination .container .row .pagination-next-col {
+    width: 100%;
+  }
+  .blog-pagination .container .row .pagination-spacer-col {
+    display: none;
+  }
+}
+/* Landscape phone to portrait tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+  .blog-pagination .container .row {
+    width: 100%;
+  }
+}
+/* Portrait tablet to landscape and desktop */
+/* Large desktop */

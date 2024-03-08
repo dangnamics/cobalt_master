@@ -1,0 +1,226 @@
+﻿    section {
+        &.emailsignup{
+            &.emailsignup-1, &.emailsignup-3 {
+            
+                @media (min-width: $screen-lg-min) {
+                    background:$email-signup-bg no-repeat scroll top right;
+                    height:250px;
+
+                }
+               
+                @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+                    background:$email-signup-bg  no-repeat scroll right top;
+                    background-color:#626262; 
+                    height:271px;
+                }
+                 
+                @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+                    background:$email-signup-bg  no-repeat scroll center center;
+                    background-size:cover; 
+
+                }
+                
+                @media (max-width: $screen-xs-max) {
+                    padding:120px 5px 40px 16px;
+                    background:$email-signup-bg  no-repeat scroll top right;
+                    background-size:cover; 
+                    border-bottom: 10px solid $brand-primary-accent;
+                } 
+                
+                .container, .container-fluid{
+
+/*480 */
+                    @media (max-width: $screen-xs-max) {
+                            width:320px;
+                            max-width:100%;
+                            section{
+                                &.emailsignup{
+                                    #gform_1 input{
+
+                                    }
+                                }
+                            }
+                        #gform_wrapper_1, .gform_wrapper{
+                            .ginput_complex.ginput_container.has_first_name.no_middle_name.has_last_name{ 
+                                span{
+                                    width:280px;
+                                    max-width:100%;
+                                }
+                            }
+                            li{
+                            &:nth-child(1){
+                                    width:100%;
+                                    clear:none;
+                                    float:none;
+                            }                                    
+                                &:nth-child(2){
+                                    width:300px;
+                                    max-width:100%;
+                                    input{
+                                        margin-left:0;
+                                    }
+                                    .ginput_container{
+                                        padding-top: 2px;
+                                        margin-top:0;
+                                    }
+                                }
+                                input[type="text"]{
+                                    width:280px;
+                                    max-width:100%;
+                                }
+                                    
+                            }
+                            .gform_footer{
+                              
+                                &.top_label{
+                                    width:100%;
+                                }
+
+                            }
+                           
+                            
+                        }
+    
+                    }
+                                       
+ 
+                    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+                            width:88%;
+                       #gform_wrapper_1, .gform_wrapper{
+                            .ginput_complex.ginput_container.has_first_name.no_middle_name.has_last_name{ 
+                                span{
+                                    width:300px;
+                                }
+                            }
+                            li{
+                            &:nth-child(1){
+                                    width:97%;
+                                    clear:none;
+                                    float:none;
+                            }                                    
+                                &:nth-child(2){
+                                    width:308px;
+                                    .ginput_container{
+                                        padding-top: 2px;
+                                    }
+                                }
+                                input[type="text"]{
+                                    width:300px;
+                                    
+                                }
+                                    
+                            }
+                            
+                             .gform_footer{
+ 
+                                input[type=submit]{
+                                    letter-spacing: 1.09px;
+                                    
+                                    font-size:23px;
+                                    font-weight:bold;
+                                    padding: 0px 42px;
+                                    width:300px;
+                                }
+
+
+                            }
+                           
+                            
+                        }
+                     }
+
+                  /* 1199 to 992*/
+                     @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+                            width:65%;
+
+                        #gform_wrapper_1, .gform_wrapper{
+                            .ginput_complex.ginput_container.has_first_name.no_middle_name.has_last_name{ 
+                                span{
+                                    width:300px;
+                                }
+                            }
+                            ul{
+                                li{ display: block;
+                                    &:nth-child(1){
+                                        width:100%;
+                                        clear:none;
+                                        float:none;
+                                    }                                    
+                                    &:nth-child(2){
+                                        width:308px;
+                                        .ginput_container{
+                                            padding-top: 2px;
+                                        }
+                                    }
+                                    input[type="text"]{
+                                        width:300px;
+
+                                    }
+
+                                }
+                            }
+                            
+                             .gform_footer{
+ 
+                                input[type=submit]{
+                                    letter-spacing: 1.09px;
+                                    
+                                    font-size:23px;
+                                    font-weight:bold;
+                                    padding: 0px 42px;
+                                    width:300px;
+                                }
+
+
+                            }
+                           
+                            
+                        }
+                   }
+                    
+                    
+                    
+                    @media (min-width: $screen-lg-min) {
+                        h4{
+                            margin-top:47px;
+                            font-size:38px;
+                        }
+                        h5{
+                            font-size:20px;
+                        }
+                       #gform_wrapper_1{
+                            li{
+                                input[type="text"]{
+                                    width:260px;
+
+                                }
+                            }
+   
+                            &:nth-child(2){
+                                margin-left:-3px;
+                            } 
+                             .gform_footer{
+ 
+                                input[type=submit]{
+                                    letter-spacing: 1.09px;
+                                    font-size:23px;
+                                    font-weight:bold;
+                                    padding: 0;
+                                    margin-left: 31px;
+                                    min-width:200px;
+                                }
+
+
+                            }
+                           
+                           
+
+                       }
+                    }
+           
+                    
+                    
+                }
+        }   
+    }
+}

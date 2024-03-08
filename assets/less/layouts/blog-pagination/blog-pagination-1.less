@@ -1,0 +1,37 @@
+//@import "../../_variables.less";
+
+@import "../../../../../rrcb_cobalt_master/assets/less/layouts/blog-pagination/blog-pagination-1"; 
+
+/* ************************
+
+	Blog Pagination
+	
+************************ */
+
+.blog-pagination {
+	margin-bottom:80px;
+	.container {
+		position:relative;
+		.row {
+			position: absolute;
+			bottom:0;
+			width:percentage(8/12);
+			a {
+				text-transform: uppercase;
+				.font-medium();
+			}
+			.pagination-prev-col{
+				width:percentage(4/12);
+			}
+			.pagination-next-col{
+				width:percentage(4/12);
+			}
+			.pagination-spacer-col {
+				width:percentage(4/12);
+			}
+		}
+	}
+	
+}
+
+@import "blog-pagination-1-responsive.less";

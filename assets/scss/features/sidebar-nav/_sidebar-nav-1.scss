@@ -1,0 +1,400 @@
+.active-nav-link {
+    background-color: $mobile-nav-hover-bg;
+    color: $mobile-subnav-font-color;
+}
+
+
+
+/* Steve's Edits*/
+.navbar-collapse.collapse {
+    display: block !important;
+    height: auto !important;
+    padding-bottom: 0;
+    overflow: visible !important;
+}
+
+.navbar-collapse.in {
+    overflow-y: visible;
+}
+
+#slideMenu ul {
+    display: none;
+}
+
+.side-nav-bar {
+    float: right;
+    padding: 0;
+
+    .search {
+        .container {
+            padding-bottom: 0;
+        }
+    }
+
+    #menu-utility-nav-sidebar {
+        margin: 0;
+    }
+
+    nav {
+        width: 100%;
+
+        ul {
+            width: 100%;
+            padding: 0;
+
+            li {
+                width: 100%;
+                height: auto;
+                float: left;
+                color: $brand-primary;
+                padding: 0;
+                margin-bottom: 3px;
+
+                a {
+                    text-decoration: none;
+                    width: 100%;
+                    height: auto;
+                    color: $brand-primary;
+                    line-height: 22px;
+                    border: solid 1px transparent;
+                    padding: 10px 20px;
+                    display: block;
+
+                    span {
+                        width: 100%;
+                        height: 28px;
+                        float: left;
+                        background: url(../images/icon-arrow03.png) no-repeat right center;
+                        padding-right: 0;
+
+                        &.caret-wrap {
+                            height: 52px;
+                            width: 66px;
+                            margin-top: -1px;
+                            margin-right: -1px;
+                            float: right;
+                            background: rgba(0, 0, 0, 0.2);
+                            text-align: center;
+                        }
+                    }
+                }
+
+                li {
+                    margin: 0;
+
+                    a {
+                        display: block;
+                        border: none;
+                        line-height: normal;
+                        padding: 0;
+                        height: auto;
+                        padding: 16px;
+                        padding-left: 40px;
+                    }
+                }
+            }
+        }
+    }
+
+    a.top-level {
+        $top-level-line-height: 52px;
+        background: $navbar-top-level-background-color;
+        height: $top-level-line-height;
+        line-height: $top-level-line-height;
+        display: block;
+        padding: 0 0 0 20px;
+
+        &:hover {
+            @extend .active-nav-link;
+        }
+
+        &.open {
+            @extend .active-nav-link;
+        }
+
+        &:active {
+            color: $mobile-nav-color;
+        }
+    }
+
+    li {
+        &:hover {
+            background: inherit;
+        }
+
+        &.tapped {
+            background: lighten($brand-primary, 15%);
+        }
+
+        a:hover {
+            background-color: rgba(0, 0, 0, .05);
+        }
+    }
+
+    #footerSlideMenu {
+        a.active {
+            color: $brand-primary !important;
+        }
+
+        a.top-level:hover {
+            color: lighten($brand-primary, 15%) !important;
+        }
+    }
+   
+}
+
+.main-menu a .caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 8px solid;
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;
+}
+
+.caret-wrap.open, li.active .caret-wrap {
+    //background: #646d34 !important;
+    color: #FFF;
+}
+
+.open .caret {
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+
+
+$sidebar-logo-md-height: 66px;
+$sidebar-container-side-padding: 15px;
+$sidebar-section-border-color: #a6a6a8;
+
+.offcanvas-open {
+    // Whenever the offcanvas is open, we should show the big red bar donate button
+    // and hide the small donate button.
+    .mobile-donate-btn {
+        display: none;
+    }
+
+    .container-utility-bar {
+        display: none;
+    }
+
+    header {
+        &.header.header-1 {
+            .container {
+                .navbar-header {
+                    .navbar-toggle {
+                        margin-right: 10px;
+                        padding-right: 0;
+
+
+                        .icon-bar {
+                            background-color: $brand-primary;
+                        }
+                    }
+
+                    &.sticky {
+                        .navbar-toggle {
+                            position: inherit;
+                            left: 0;
+                            transition-property: all;
+                            transition-duration: .5s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .side-nav-bar {
+        .mobile-donate-btn {
+            display: block;
+            margin: 0 auto;
+            z-index: auto;
+            border-bottom: 1px solid $sidebar-section-border-color;
+        }
+    }
+}
+
+.site-wrapper {
+    .side-nav-bar {
+        .navbar-collapse {
+        }
+    }
+}
+
+.site-wrapper {
+    .side-nav-bar {
+        position: relative;
+
+        .navbar-collapse {
+            top: 0;
+
+            ul {
+                margin-bottom: 0;
+
+                li {
+                    margin-bottom: 0px;
+                    background-color: $mobile-li-bg-color;
+
+                    a {
+                        font-size: $mobile-secondlevel-font-size;
+                        height: 40px;
+                        padding: .5em 0 0 15px;
+
+                        &.top-level {
+                            height: 52px;
+                            background: $mobile-li-bg-color;
+                            padding: 0 0 0 15px;
+                            font-weight: bold;
+                            font-size: $mobile-toplevel-font-size;
+                        }
+
+                        span {
+                            &.caret-wrap {
+                                width: 58px;
+                                height: auto;
+
+                                b {
+                                    &.carat {
+                                        color: $brand-secondary;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    a.dropdown-toggle.open {
+                        background-color: $mobile-li-bg-color;
+                    }
+
+                    &.currentPageActive {
+                        & > a {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+
+                ul {
+                    padding-bottom: 13px;
+                }
+            }
+
+            &.sidebar-offcanvas {
+                .container, .container-fluid {
+                    width: 100%;
+                    padding: 0;
+                }
+            }
+
+            div.offcanvas-home-logo {
+                position: absolute;
+                top: 0;
+                //right:0;
+                z-index: 1000;
+                background: #fff;
+                width: 100%;
+
+
+                & > div {
+                    a {
+                        padding-top: 14px;
+                        padding-bottom: 10px;
+
+                        img {
+                            &#logo {
+                                padding: 0 0 0 0px;
+                                max-height: $sidebar-logo-md-height;
+                                width: auto;
+                            }
+                        }
+                    }
+                }
+            }
+
+            section {
+                &.search-1 {
+                    //padding-bottom: 19px;
+                    height: 60px;
+                    border-bottom: 1px solid $sidebar-section-border-color;
+                    padding: 13px $sidebar-container-side-padding;
+
+                    form {
+                        color: #535C6F;
+
+                        input {
+                            border: 1px solid #E8E8E8;
+                            width: 100%;
+                        }
+
+                        button.searchbox-submit {
+                            color: #D9DADE;
+                            font-size: 1rem;
+                            float: right;
+                            top: -1.75em;
+                            position: relative;
+                        }
+                    }
+                }
+
+                &.nav {
+                    &.nav-nth-2 {
+                        nav {
+                            &.header-nav {
+                                text-align: left;
+                                overflow: hidden;
+
+                                ul {
+                                    overflow: hidden;
+
+                                    li {
+                                       
+                                        display: block;
+                                        
+                                        a {
+                                            font-weight:normal;
+                                            border: solid 0px transparent;
+                                            padding-left: $sidebar-container-side-padding;
+
+                                            &:focus {
+                                                color: $primary-p-color;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            aside {
+                &.social-icons {
+                    border-top: 1px solid $sidebar-section-border-color;
+                    margin-top: 12px;
+                    padding-left: $sidebar-container-side-padding;
+
+                    &:before {
+                        font-size: 0.9444rem;
+                        font-family: $font-primary;
+                        font-weight: bold;
+                        margin: 1em 0 .5em;
+                        display: block;
+                    }
+
+                    a {
+                        margin-left: 0;
+                        margin-right: 10px;
+                        font-size: 0.9444rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@import "sidebar-nav-1-responsive";
